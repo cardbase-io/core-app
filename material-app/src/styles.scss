@@ -1,0 +1,84 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$parrot-blue: (
+  50 : #e2f1ff,
+  100 : #b6dbff,
+  200 : #86c4ff,
+  300 : #55acff,
+  400 : #309aff,
+  500 : #0c88ff,
+  600 : #0a80ff,
+  700 : #0875ff,
+  800 : #066bff,
+  900 : #0358ff,
+  A100 : #ffffff,
+  A200 : #f2f6ff,
+  A400 : #bfd1ff,
+  A700 : #a6bfff,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+
+$parrot-orange: (
+  50 : #fff8e1,
+  100 : #ffeeb3,
+  200 : #ffe380,
+  300 : #fed84d,
+  400 : #fecf27,
+  500 : #fec701,
+  600 : #fec101,
+  700 : #feba01,
+  800 : #feb301,
+  900 : #fda600,
+  A100 : #ffffff,
+  A200 : #fff9f1,
+  A400 : #ffe6be,
+  A700 : #ffdca4,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #000000,
+    900 : #000000,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+
+$material-app-primary: mat-palette($parrot-blue, 600, 400, 800);
+$material-app-accent:  mat-palette($parrot-orange, 400, 200, 800);
+$material-app-warn:    mat-palette($mat-red);
+
+
+$material-app-theme: mat-light-theme($material-app-primary, $material-app-accent, $material-app-warn);
+
+@include angular-material-theme($material-app-theme);
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
