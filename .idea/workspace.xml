@@ -3,39 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d879cb86-a079-41ea-842e-730dc36aa991" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/browserslist" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/browserslist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/e2e/protractor.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/e2e/protractor.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/e2e/src/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/e2e/src/app.e2e-spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/e2e/src/app.po.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/e2e/src/app.po.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/e2e/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/e2e/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/karma.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/material-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/material-app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/app.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/app.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/src/app/material/material.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/material/material.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/src/assets/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/assets/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/environments/environment.prod.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/src/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/polyfills.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/tsconfig.app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/tsconfig.spec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/material-app/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -102,11 +70,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core-app/src/app/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
               <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="90">
+                <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -159,6 +139,8 @@
         <option value="$PROJECT_DIR$/material-app/angular.json" />
         <option value="$PROJECT_DIR$/material-app/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/material-app/README.md" />
+        <option value="$PROJECT_DIR$/LICENCE.md" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -252,7 +234,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1564417976764</updated>
-      <workItem from="1564417978001" duration="12593000" />
+      <workItem from="1564417978001" duration="13211000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize - static web project">
       <created>1564418198596</created>
@@ -317,21 +299,29 @@
       <option name="project" value="LOCAL" />
       <updated>1564484938819</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="module name renamed">
+      <created>1564490437432</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1564490437432</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12593000" />
+    <option name="totallyTimeSpent" value="13211000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1296" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
       <window_info id="npm" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2783094" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2783094" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" weight="0.3299363" />
       <window_info anchor="bottom" id="TypeScript" />
@@ -339,7 +329,7 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" sideWeight="0.5007153" side_tool="true" weight="0.3299363" />
       <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" weight="0.3299363" />
+      <window_info active="true" anchor="bottom" id="Version Control" visible="true" weight="0.3299363" />
       <window_info anchor="bottom" id="Flutter Performance" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -378,7 +368,8 @@
     <MESSAGE value="minor update - the aim and release notes seperated into github wiki" />
     <MESSAGE value="minor update - theming test" />
     <MESSAGE value="minor update - domain name" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor update - domain name" />
+    <MESSAGE value="module name renamed" />
+    <option name="LAST_COMMIT_MESSAGE" value="module name renamed" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/core-app/e2e/protractor.conf.js">
@@ -527,10 +518,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/LICENCE.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="10095">
+            <caret line="673" column="49" selection-start-line="673" selection-start-column="49" selection-end-line="673" selection-end-column="49" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core-app/src/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
