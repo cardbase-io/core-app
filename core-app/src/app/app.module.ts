@@ -6,11 +6,12 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MaterialModule } from './material/material.module';
-import { LoginComponent } from './authz/login/login.component';
-import { SigninComponent } from './authz/signin/signin.component';
-import { RegisterComponent } from './authz/register/register.component';
-import { VerificationComponent } from './authz/verification/verification.component';
-import { DetailComponent } from './detail/detail.component';
+import { LoginComponent } from './components/authz/login/login.component';
+import { SigninComponent } from './components/authz/signin/signin.component';
+import { RegisterComponent } from './components/authz/register/register.component';
+import { VerificationComponent } from './components/authz/verification/verification.component';
+import { DetailComponent } from './components/detail/detail.component';
+import { MasterComponent } from './components/master.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DetailComponent } from './detail/detail.component';
     SigninComponent,
     RegisterComponent,
     VerificationComponent,
-    DetailComponent
+    DetailComponent,
+    MasterComponent
   ],
   imports: [
     BrowserModule,
