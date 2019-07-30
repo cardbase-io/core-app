@@ -1,6 +1,6 @@
 # MaterialApp
 
-This app will be the prototype of **cardio platform** to enable faster platform based idea into product 
+This app will be the prototype of **CARDBASE.IO platform** to enable faster platform based idea into product 
 w/ angular,  firebase platform, material.io, PWA, puppeteer and applied best practices.
 
 **The aim is** 
