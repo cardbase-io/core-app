@@ -1,10 +1,18 @@
 # MaterialApp
 
+This app will be the prototype of **cardio platform** to enable faster platform based idea into product 
+w/ angular,  firebase platform, material.io, PWA, puppeteer and applied best practices.
+
+**The aim is** 
+- faster time2market w/ UI/UX ready mobile web app.
+- PWA instead of mobile app to decrease Marketing costs.
+- Microservices architecture and loosely-coupled with legacy systems
+- Automated tests to increase quality
+- Easy upgrades
+- Marketing analytics ready
+
+For [release notes](https://github.com/tansudasli/angular-sandbox/wiki)
+
 ## How to install
 
-1. `ng new material-app --defaults=false` to create an angular app [tag]==**v0.0.1-Initialize**
-2. `cd material-app`
-3. `npm install --save @angular/material @angular/cdk @angular/animations` 
-4. `ng add @angular/material` to inject material components and templates [tag]==**v0.0.2-Initialize-Material**
-5. `ng g m material` to separate material components [tag]==**v0.0.3-Initialize-Separate-Material-Components**
-6. Changed from css 2 scss for custom theming [tag]==**v0.0.4-Initialize-Theming**
+1. `git clone ...`
