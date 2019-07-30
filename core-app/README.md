@@ -1,4 +1,4 @@
-# cardbase.io/core-app
+# cardbase.io
 
 This app will be the prototype of **CARDBASE.IO platform** to enable much faster implementation of
 **platform based ideas** w/ angular, firebase platform, material.io, PWA, puppeteer and applied best practices.
@@ -16,3 +16,8 @@ For [release notes](https://github.com/tansudasli/angular-sandbox/wiki)
 ## How to install
 
 1. `git clone ...`
+
+### Folders
+
+- /core-app: core-app for core-app start
+- /prototype: sketch files for prototype start
