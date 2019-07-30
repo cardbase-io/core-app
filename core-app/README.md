@@ -1,15 +1,9 @@
-# cardbase.io
+# cardbase.io/core-app
 
 This app will be the prototype of **CARDBASE.IO platform** to enable much faster implementation of
 **platform based ideas** w/ angular, firebase platform, material.io, PWA, puppeteer and applied best practices.
 
-**The aim is** 
-- faster time2market w/ UI/UX ready mobile web app.
-- PWA instead of mobile app to decrease Marketing costs.
-- Microservices architecture and loosely-coupled with legacy systems
-- Automated tests to increase quality
-- Easy upgrades
-- Marketing analytics ready
+
 
 For [release notes](https://github.com/tansudasli/angular-sandbox/wiki)
 
@@ -17,7 +11,4 @@ For [release notes](https://github.com/tansudasli/angular-sandbox/wiki)
 
 1. `git clone ...`
 
-### Folders
 
-- /core-app: core-app for core-app start
-- /prototype: sketch files for prototype start
