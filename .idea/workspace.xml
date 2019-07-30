@@ -4,7 +4,6 @@
     <list default="true" id="d879cb86-a079-41ea-842e-730dc36aa991" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,24 +79,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
               <first_editor>
-                <caret column="1" selection-start-column="1" selection-end-column="21" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core-app/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor>
-                <caret column="22" selection-start-column="22" selection-end-column="22" />
+                <caret column="2" selection-start-column="2" selection-end-column="2" />
               </first_editor>
               <second_editor />
             </state>
@@ -151,8 +138,8 @@
         <option value="$PROJECT_DIR$/material-app/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/material-app/README.md" />
         <option value="$PROJECT_DIR$/LICENCE.md" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/core-app/README.md" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -206,7 +193,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/material-app/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/core-app/node_modules/typescript/lib" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -252,7 +239,7 @@
       <option name="presentableId" value="Default" />
       <updated>1564417976764</updated>
       <workItem from="1564417978001" duration="13211000" />
-      <workItem from="1564492384665" duration="633000" />
+      <workItem from="1564492384665" duration="901000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize - static web project">
       <created>1564418198596</created>
@@ -324,11 +311,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564490437432</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="minor update - app name updated">
+      <created>1564511568692</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1564511568692</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13844000" />
+    <option name="totallyTimeSpent" value="14112000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1296" height="877" extended-state="0" />
@@ -387,7 +381,8 @@
     <MESSAGE value="minor update - theming test" />
     <MESSAGE value="minor update - domain name" />
     <MESSAGE value="module name renamed" />
-    <option name="LAST_COMMIT_MESSAGE" value="module name renamed" />
+    <MESSAGE value="minor update - app name updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor update - app name updated" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/core-app/e2e/protractor.conf.js">
@@ -516,13 +511,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-app/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core-app/src/app/app.component.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -533,21 +521,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/core-app/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor>
-            <caret column="1" selection-start-column="1" selection-end-column="21" />
+          <first_editor relative-caret-position="270">
+            <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-app/README.md">
+    <entry file="file://$PROJECT_DIR$/core-app/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor>
-            <caret column="22" selection-start-column="22" selection-end-column="22" />
+            <caret column="2" selection-start-column="2" selection-end-column="2" />
           </first_editor>
           <second_editor />
         </state>
