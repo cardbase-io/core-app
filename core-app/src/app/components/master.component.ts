@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Master} from '../models/Master';
+import { Master} from '../model/Master';
 
 @Component({
   selector: 'app-master',
