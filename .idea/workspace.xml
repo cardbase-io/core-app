@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d879cb86-a079-41ea-842e-730dc36aa991" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/master.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/master.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core-app/src/app/components/master.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/master.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core-app/src/app/components/master.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/master.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/material.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/material.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core-app/src/app/model/Master.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/model/Master.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -60,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core-app/src/app/app-routing.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+            <state relative-caret-position="420">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -81,26 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core-app/src/app/components/master.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="n#mat-toolbar-row#0;n#mat-toolbar#0;n#!!top" />
-                <element signature="n#mat-card-header#0;n#mat-card#0;n#!!top" />
-                <element signature="n#mat-card-content#0;n#mat-card#0;n#!!top" />
-                <element signature="n#mat-card-actions#0;n#mat-card#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core-app/src/app/components/master.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="36" column="3" lean-forward="true" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
+            <state relative-caret-position="315">
+              <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -108,17 +88,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core-app/src/app/model/Master.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="165">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core-app/src/app/app.component.html">
+        <entry file="file://$PROJECT_DIR$/core-app/src/app/components/master.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="375">
+              <caret line="26" column="6" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -177,11 +157,11 @@
         <option value="$PROJECT_DIR$/core-app/src/app/material/material.module.ts" />
         <option value="$PROJECT_DIR$/core-app/src/app/material.module.ts" />
         <option value="$PROJECT_DIR$/core-app/src/app/components/master.component.css" />
+        <option value="$PROJECT_DIR$/core-app/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/core-app/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/core-app/src/app/model/Master.ts" />
         <option value="$PROJECT_DIR$/core-app/src/app/components/master.component.ts" />
-        <option value="$PROJECT_DIR$/core-app/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/core-app/src/app/components/master.component.html" />
-        <option value="$PROJECT_DIR$/core-app/src/app/app-routing.module.ts" />
       </list>
     </option>
   </component>
@@ -236,23 +216,7 @@
               <item name="core-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="authz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cardbase.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cardbase.io" type="462c0819:PsiDirectoryNode" />
-              <item name="core-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cardbase.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cardbase.io" type="462c0819:PsiDirectoryNode" />
-              <item name="core-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -332,7 +296,7 @@
       <option name="presentableId" value="Default" />
       <updated>1564417976764</updated>
       <workItem from="1564417978001" duration="13211000" />
-      <workItem from="1564492384665" duration="17337000" />
+      <workItem from="1564492384665" duration="20966000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize - static web project">
       <created>1564418198596</created>
@@ -481,17 +445,31 @@
       <option name="project" value="LOCAL" />
       <updated>1564523303913</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Initialize - Pages, Routes completed.">
+      <created>1564568413095</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1564568413096</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Initialize - click a card on master page, redirects to detail page">
+      <created>1564581398200</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1564581398200</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30548000" />
+    <option name="totallyTimeSpent" value="34177000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1296" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28229666" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28229666" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -506,8 +484,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.3299363" />
-      <window_info anchor="bottom" id="TypeScript" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3299363" />
+      <window_info anchor="bottom" id="TypeScript" order="8" weight="0.3299363" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3299363" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007153" side_tool="true" weight="0.3299363" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
@@ -550,7 +528,9 @@
     <MESSAGE value="Initialize - Pages" />
     <MESSAGE value="Initialize - Models" />
     <MESSAGE value="Initialize - material.ts moved to under app/ folder for clarity" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initialize - material.ts moved to under app/ folder for clarity" />
+    <MESSAGE value="Initialize - Pages, Routes completed." />
+    <MESSAGE value="Initialize - click a card on master page, redirects to detail page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initialize - click a card on master page, redirects to detail page" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/core-app/e2e/protractor.conf.js">
@@ -752,6 +732,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core-app/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-app/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core-app/src/app/components/detail/detail.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -759,47 +756,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-app/src/app/model/Master.ts">
+    <entry file="file://$PROJECT_DIR$/core-app/node_modules/@angular/material/button/typings/button.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-app/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-app/src/app/components/master.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="n#mat-toolbar-row#0;n#mat-toolbar#0;n#!!top" />
-            <element signature="n#mat-card-header#0;n#mat-card#0;n#!!top" />
-            <element signature="n#mat-card-content#0;n#mat-card#0;n#!!top" />
-            <element signature="n#mat-card-actions#0;n#mat-card#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="253">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core-app/src/app/components/master.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="36" column="3" lean-forward="true" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
+        <state relative-caret-position="375">
+          <caret line="26" column="6" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-app/src/app/app-routing.module.ts">
+    <entry file="file://$PROJECT_DIR$/core-app/src/app/model/Master.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-app/src/app/components/master.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
         </state>
       </provider>
     </entry>

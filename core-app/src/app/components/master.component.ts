@@ -9,29 +9,31 @@ import { Master} from '../model/Master';
 export class MasterComponent implements OnInit {
   title = 'Master';
 
-  master: Master[];
+  masterCards: Master[];
 
   constructor() { }
 
   ngOnInit() {
     // TODO: init dummy data
-    this.master = [{
+    this.masterCards = [{
       id: 123,
       cardContent: {title: 'location',
                     subTitle: 'eventName',
                     imageSrcURL: 'https://dummyimage.com/600x400/c7af25/fff',
-                    imageAltText: 'hint'},
+                    imageAltText: 'hint',
+                    routerLink: '/detail/123'},
       cardHeader: {title: '', avatarURL: ''},
-      cardActions: {btnText: '', btnPostURL: ''}
+      cardActions: []
     },
     {
-      id: 123,
+      id: 124,
       cardContent: {title: 'location',
                     subTitle: 'eventName',
                     imageSrcURL: 'https://dummyimage.com/600x400/c7af25/fff',
-                    imageAltText: 'hint'},
+                    imageAltText: 'hint',
+                    routerLink: '/detail/124'},
       cardHeader: {title: '', avatarURL: ''},
-      cardActions: {btnText: '', btnPostURL: ''}
+      cardActions: []
     }];
 
   }

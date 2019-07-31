@@ -7,21 +7,21 @@
 </mat-toolbar>
 
 
-<mat-card class="master-card" *ngFor="let item of master">
-  <mat-card-header *ngIf="item.cardHeader != null > 0">
+<mat-card class="master-card" *ngFor="let item of masterCards">
+  <mat-card-header *ngIf="item.cardHeader.title.length > 0">
     <mat-card-title>{{ item.cardHeader.title}}</mat-card-title>
   </mat-card-header>
 
-  <mat-card-content routerLink="/detail/{{ item.id }}" routerLinkActive="active">
+  <mat-card-content routerLink="{{ item.cardContent.routerLink }}" routerLinkActive="active">
     <img mat-card-image src="{{ item.cardContent.imageSrcURL}}" alt="{{ item.cardContent.imageAltText}}">
 
     <mat-card-title>{{ item.cardContent.title}}</mat-card-title>
     <mat-card-subtitle>{{ item.cardContent.subTitle}}</mat-card-subtitle>
   </mat-card-content>
 
-  <mat-card-actions *ngIf="item.cardActions != null">
-    <button mat-button>{{ item.cardActions.btnText}}</button>
-    <button mat-button>{{ item.cardActions.btnText}}</button>
+<!--  TODO: more than 1 buttons must be horizontal -->
+  <mat-card-actions *ngFor="let buttons of item.cardActions">
+    <button mat-button routerLink="{{ buttons.routerLink }}">{{ buttons.btnText}}</button>
   </mat-card-actions>
 </mat-card>
 
