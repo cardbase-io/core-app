@@ -1,6 +1,6 @@
 <mat-toolbar color="primary" #matToolbar>
   <mat-toolbar-row>
-    <mat-icon class="top-menu-icon" aria-hidden="false" aria-label="Menu">menu</mat-icon>
+    <mat-icon class="top-menu-icon" aria-hidden="false" aria-label="Menu" >menu</mat-icon>
     <span class="top-menu-spacer"></span>
     <span>{{ title }}</span>
   </mat-toolbar-row>
@@ -12,7 +12,7 @@
     <mat-card-title>{{ item.cardHeader.title}}</mat-card-title>
   </mat-card-header>
 
-  <mat-card-content>
+  <mat-card-content routerLink="/detail/{{ item.id }}" routerLinkActive="active">
     <img mat-card-image src="{{ item.cardContent.imageSrcURL}}" alt="{{ item.cardContent.imageAltText}}">
 
     <mat-card-title>{{ item.cardContent.title}}</mat-card-title>
@@ -24,9 +24,4 @@
     <button mat-button>{{ item.cardActions.btnText}}</button>
   </mat-card-actions>
 </mat-card>
-
-
-
-
-
 
