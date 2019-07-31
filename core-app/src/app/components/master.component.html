@@ -1,1 +1,32 @@
-<p>master works!</p>
+<mat-toolbar color="primary" #matToolbar>
+  <mat-toolbar-row>
+    <mat-icon class="top-menu-icon" aria-hidden="false" aria-label="Menu">menu</mat-icon>
+    <span class="top-menu-spacer"></span>
+    <span>{{ title }}</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+<mat-card class="master-card" *ngFor="let item of master">
+  <mat-card-header *ngIf="item.cardHeader != null > 0">
+    <mat-card-title>{{ item.cardHeader.title}}</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <img mat-card-image src="{{ item.cardContent.imageSrcURL}}" alt="{{ item.cardContent.imageAltText}}">
+
+    <mat-card-title>{{ item.cardContent.title}}</mat-card-title>
+    <mat-card-subtitle>{{ item.cardContent.subTitle}}</mat-card-subtitle>
+  </mat-card-content>
+
+  <mat-card-actions *ngIf="item.cardActions != null">
+    <button mat-button>{{ item.cardActions.btnText}}</button>
+    <button mat-button>{{ item.cardActions.btnText}}</button>
+  </mat-card-actions>
+</mat-card>
+
+
+
+
+
+

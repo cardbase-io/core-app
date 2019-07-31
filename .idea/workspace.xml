@@ -2,30 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d879cb86-a079-41ea-842e-730dc36aa991" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/core-app/src/app/models/Detail.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-app/src/app/models/Master.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/authz/login/login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/login/login.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/authz/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/authz/login/login.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/login/login.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/authz/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/authz/register/register.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/register/register.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/authz/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/register/register.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/authz/register/register.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/register/register.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/authz/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/register/register.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/authz/signin/signin.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/signin/signin.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/authz/signin/signin.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/signin/signin.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/authz/signin/signin.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/signin/signin.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/authz/signin/signin.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/signin/signin.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/authz/verification/verification.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/verification/verification.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/authz/verification/verification.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/verification/verification.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/authz/verification/verification.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/verification/verification.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/authz/verification/verification.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/verification/verification.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/detail/detail.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/detail/detail.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/detail/detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/detail/detail.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/detail/detail.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/detail/detail.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/detail/detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/detail/detail.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/master.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/master.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/master.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/master.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/master.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/master.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/material.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/material.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/model/Master.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/model/Master.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,56 +27,46 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core-app/src/app/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
+            <state relative-caret-position="330">
               <caret line="35" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core-app/src/app/models/Master.ts">
+        <entry file="file://$PROJECT_DIR$/core-app/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+            <state relative-caret-position="195">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core-app/src/app/components/detail/detail.component.ts">
+        <entry file="file://$PROJECT_DIR$/core-app/src/app/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+            <state relative-caret-position="150">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core-app/src/app/components/master.component.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core-app/src/app/app-routing.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
               <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core-app/src/app/models/Detail.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core-app/src/app/components/authz/login/login.component.ts">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core-app/angular.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-              <folding>
-                <element signature="n#!!block;n#test#0;n#!!block;n#architect#0;n#!!block;n#material-app#0;n#!!block;n#projects#0;n#!!top" />
-                <element signature="n#!!block;n#lint#0;n#!!block;n#architect#0;n#!!block;n#material-app#0;n#!!block;n#projects#0;n#!!top" />
-                <element signature="n#!!block;n#e2e#0;n#!!block;n#architect#0;n#!!block;n#material-app#0;n#!!block;n#projects#0;n#!!top" />
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,23 +74,24 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core-app/src/app/components/detail/detail.component.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core-app/src/app/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="42" selection-start-column="42" selection-end-column="42" />
+            <state relative-caret-position="15">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core-app/src/app/components/authz/verification/verification.component.ts">
+        <entry file="file://$PROJECT_DIR$/core-app/src/app/components/master.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="210">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <element signature="n#mat-toolbar-row#0;n#mat-toolbar#0;n#!!top" />
+                <element signature="n#mat-card-header#0;n#mat-card#0;n#!!top" />
+                <element signature="n#mat-card-content#0;n#mat-card#0;n#!!top" />
+                <element signature="n#mat-card-actions#0;n#mat-card#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,8 +99,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core-app/src/app/components/master.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+            <state relative-caret-position="525">
+              <caret line="36" column="3" lean-forward="true" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core-app/src/app/model/Master.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core-app/src/app/app.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -145,7 +139,12 @@
       <find>#</find>
       <find>rgba(</find>
       <find>styles</find>
+      <find>exa</find>
+      <find>example</find>
     </findStrings>
+    <replaceStrings>
+      <replace>master</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/material-app</dir>
     </dirStrings>
@@ -173,10 +172,16 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/core-app/src/app/model/master.ts" />
         <option value="$PROJECT_DIR$/core-app/src/app/model/Detail.ts" />
-        <option value="$PROJECT_DIR$/core-app/src/app/model/Master.ts" />
         <option value="$PROJECT_DIR$/core-app/src/app/detail/detail.component.ts" />
-        <option value="$PROJECT_DIR$/core-app/src/app/components/master.component.ts" />
         <option value="$PROJECT_DIR$/core-app/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/core-app/src/app/material/material.module.ts" />
+        <option value="$PROJECT_DIR$/core-app/src/app/material.module.ts" />
+        <option value="$PROJECT_DIR$/core-app/src/app/components/master.component.css" />
+        <option value="$PROJECT_DIR$/core-app/src/app/model/Master.ts" />
+        <option value="$PROJECT_DIR$/core-app/src/app/components/master.component.ts" />
+        <option value="$PROJECT_DIR$/core-app/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/core-app/src/app/components/master.component.html" />
+        <option value="$PROJECT_DIR$/core-app/src/app/app-routing.module.ts" />
       </list>
     </option>
   </component>
@@ -231,7 +236,23 @@
               <item name="core-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="authz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cardbase.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardbase.io" type="462c0819:PsiDirectoryNode" />
+              <item name="core-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cardbase.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cardbase.io" type="462c0819:PsiDirectoryNode" />
+              <item name="core-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -263,6 +284,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/core-app/src/app" />
       <recent name="$PROJECT_DIR$/core-app/src/app/components" />
     </key>
   </component>
@@ -310,7 +332,7 @@
       <option name="presentableId" value="Default" />
       <updated>1564417976764</updated>
       <workItem from="1564417978001" duration="13211000" />
-      <workItem from="1564492384665" duration="4828000" />
+      <workItem from="1564492384665" duration="17337000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize - static web project">
       <created>1564418198596</created>
@@ -417,11 +439,53 @@
       <option name="project" value="LOCAL" />
       <updated>1564519430027</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Initialize - Pages">
+      <created>1564521729712</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1564521729712</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Initialize - Pages">
+      <created>1564521750909</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1564521750909</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Initialize - Pages">
+      <created>1564521851057</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1564521851057</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Initialize - Pages">
+      <created>1564521874374</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1564521874374</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Initialize - Models">
+      <created>1564521884825</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1564521884825</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Initialize - material.ts moved to under app/ folder for clarity">
+      <created>1564523303913</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1564523303913</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18039000" />
+    <option name="totallyTimeSpent" value="30548000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1296" height="877" extended-state="0" />
@@ -435,7 +499,7 @@
       <window_info id="npm" order="5" side_tool="true" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.3299363" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -484,7 +548,9 @@
     <MESSAGE value="minor update - folder name explanations added" />
     <MESSAGE value="minor update - explanations added" />
     <MESSAGE value="Initialize - Pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initialize - Pages" />
+    <MESSAGE value="Initialize - Models" />
+    <MESSAGE value="Initialize - material.ts moved to under app/ folder for clarity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initialize - material.ts moved to under app/ folder for clarity" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/core-app/e2e/protractor.conf.js">
@@ -528,16 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-app/src/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
-          <folding>
-            <element signature="e#159#690#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core-app/karma.conf.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -570,35 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-app/src/app/app-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-app/src/app/material/material.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-app/src/app/app.component.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-app/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -619,13 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-app/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core-app/angular.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -638,37 +658,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-app/src/app/components/detail/detail.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/core-app/src/app/components/authz/login/login.component.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-app/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-app/src/app/models/Detail.ts">
+    <entry file="file://$PROJECT_DIR$/core-app/src/app/model/Detail.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-app/src/app/models/Master.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core-app/src/app/components/detail/detail.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+          <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
@@ -682,17 +685,121 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-app/src/app/components/master.component.ts">
+    <entry file="file://$PROJECT_DIR$/core-app/node_modules/@angular/core/core.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        <state relative-caret-position="765">
+          <caret line="8435" column="46" selection-start-line="8435" selection-start-column="46" selection-end-line="8435" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-app/src/app/app.component.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-app/src/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="72" selection-start-line="72" selection-end-line="72" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-app/src/app/components/master.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-app/src/app/material.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-app/src/app/components/master.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core-app/src/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="42" selection-start-column="42" selection-end-column="42" />
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-app/tslint.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-app/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-app/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-app/src/app/components/detail/detail.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-app/src/app/model/Master.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-app/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-app/src/app/components/master.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="n#mat-toolbar-row#0;n#mat-toolbar#0;n#!!top" />
+            <element signature="n#mat-card-header#0;n#mat-card#0;n#!!top" />
+            <element signature="n#mat-card-content#0;n#mat-card#0;n#!!top" />
+            <element signature="n#mat-card-actions#0;n#mat-card#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-app/src/app/components/master.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="36" column="3" lean-forward="true" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-app/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

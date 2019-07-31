@@ -1,0 +1,15 @@
+.top-menu-spacer {
+  /* This fills the remaining space, by using flexbox.
+     Every toolbar row uses a flexbox row layout. */
+  flex: 0.1 1 auto;
+}
+
+.top-menu-icon {
+  padding: 0 5px;
+}
+
+.master-card {
+  max-width: 400px;
+  margin: 10px 10px 10px 10px;
+}
+

@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MaterialModule } from './material/material.module';
+import { MaterialModule } from './material.module';
 import { LoginComponent } from './components/authz/login/login.component';
 import { SigninComponent } from './components/authz/signin/signin.component';
 import { RegisterComponent } from './components/authz/register/register.component';
