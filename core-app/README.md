@@ -5,7 +5,7 @@ This app will be the prototype of **CARDBASE.IO platform** to enable much faster
 
 
 
-For [release notes](https://github.com/tansudasli/angular-sandbox/wiki)
+For [release notes](https://github.com/tansudasli/cardbase.io/wiki)
 
 ## How to install
 

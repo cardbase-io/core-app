@@ -12,7 +12,7 @@ What is cardbase.io ?
 - Marketing analytics ready
 
 
-For [release notes](https://github.com/tansudasli/angular-sandbox/wiki)
+For [release notes](https://github.com/tansudasli/cardbase.io/wiki)
 
 ### Folders
 

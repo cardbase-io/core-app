@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/angular-sandbox.iml" filepath="$PROJECT_DIR$/angular-sandbox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cardbase.io.iml" filepath="$PROJECT_DIR$/cardbase.io.iml" />
       <module fileurl="file://$PROJECT_DIR$/core-app/core-app.iml" filepath="$PROJECT_DIR$/core-app/core-app.iml" />
     </modules>
   </component>
