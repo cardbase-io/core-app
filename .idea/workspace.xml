@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d879cb86-a079-41ea-842e-730dc36aa991" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/master.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/master.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/angular.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core-app/src/app/components/master.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/master.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/model/Master.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/model/Master.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,15 +45,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core-app/src/app/components/master.component.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core-app/src/app/app-routing.module.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
@@ -76,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core-app/src/app/components/master.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+            <state relative-caret-position="90">
+              <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -97,8 +86,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core-app/src/app/components/master.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="26" column="6" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+            <state relative-caret-position="570">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core-app/src/styles.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="490">
+              <caret line="72" selection-start-line="72" selection-end-line="72" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core-app/angular.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="126" column="3" lean-forward="true" selection-start-line="126" selection-start-column="3" selection-end-line="126" selection-end-column="3" />
+              <folding>
+                <element signature="n#!!block;n#lint#0;n#!!block;n#architect#0;n#!!block;n#material-app#0;n#!!block;n#projects#0;n#!!top" />
+                <element signature="n#!!block;n#e2e#0;n#!!block;n#architect#0;n#!!block;n#material-app#0;n#!!block;n#projects#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,6 +132,8 @@
       <find>styles</find>
       <find>exa</find>
       <find>example</find>
+      <find>schematics</find>
+      <find>css</find>
     </findStrings>
     <replaceStrings>
       <replace>master</replace>
@@ -160,8 +173,9 @@
         <option value="$PROJECT_DIR$/core-app/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/core-app/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/core-app/src/app/model/Master.ts" />
-        <option value="$PROJECT_DIR$/core-app/src/app/components/master.component.ts" />
         <option value="$PROJECT_DIR$/core-app/src/app/components/master.component.html" />
+        <option value="$PROJECT_DIR$/core-app/src/app/components/master.component.ts" />
+        <option value="$PROJECT_DIR$/core-app/angular.json" />
       </list>
     </option>
   </component>
@@ -296,7 +310,7 @@
       <option name="presentableId" value="Default" />
       <updated>1564417976764</updated>
       <workItem from="1564417978001" duration="13211000" />
-      <workItem from="1564492384665" duration="20966000" />
+      <workItem from="1564492384665" duration="22223000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize - static web project">
       <created>1564418198596</created>
@@ -459,15 +473,21 @@
       <option name="project" value="LOCAL" />
       <updated>1564581398200</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Initialize - master data model updated">
+      <created>1564583546763</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1564583546763</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34177000" />
+    <option name="totallyTimeSpent" value="35434000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1296" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28229666" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -485,7 +505,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.3299363" />
       <window_info anchor="bottom" id="TypeScript" order="8" weight="0.3299363" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3299363" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3299363" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007153" side_tool="true" weight="0.3299363" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
@@ -530,7 +550,8 @@
     <MESSAGE value="Initialize - material.ts moved to under app/ folder for clarity" />
     <MESSAGE value="Initialize - Pages, Routes completed." />
     <MESSAGE value="Initialize - click a card on master page, redirects to detail page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initialize - click a card on master page, redirects to detail page" />
+    <MESSAGE value="Initialize - master data model updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initialize - master data model updated" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/core-app/e2e/protractor.conf.js">
@@ -626,18 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-app/angular.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-          <folding>
-            <element signature="n#!!block;n#test#0;n#!!block;n#architect#0;n#!!block;n#material-app#0;n#!!block;n#projects#0;n#!!top" />
-            <element signature="n#!!block;n#lint#0;n#!!block;n#architect#0;n#!!block;n#material-app#0;n#!!block;n#projects#0;n#!!top" />
-            <element signature="n#!!block;n#e2e#0;n#!!block;n#architect#0;n#!!block;n#material-app#0;n#!!block;n#projects#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core-app/src/app/components/authz/login/login.component.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -674,13 +683,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core-app/src/app/app.component.scss">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-app/src/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="72" selection-start-line="72" selection-end-line="72" selection-end-column="21" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core-app/src/app/components/master.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -763,10 +765,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-app/src/app/components/master.component.ts">
+    <entry file="file://$PROJECT_DIR$/core-app/src/app/components/master.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="26" column="6" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+        <state relative-caret-position="90">
+          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -777,10 +779,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-app/src/app/components/master.component.html">
+    <entry file="file://$PROJECT_DIR$/core-app/src/app/components/master.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+        <state relative-caret-position="570">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-app/src/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="72" selection-start-line="72" selection-end-line="72" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-app/angular.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="126" column="3" lean-forward="true" selection-start-line="126" selection-start-column="3" selection-end-line="126" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!block;n#lint#0;n#!!block;n#architect#0;n#!!block;n#material-app#0;n#!!block;n#projects#0;n#!!top" />
+            <element signature="n#!!block;n#e2e#0;n#!!block;n#architect#0;n#!!block;n#material-app#0;n#!!block;n#projects#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>

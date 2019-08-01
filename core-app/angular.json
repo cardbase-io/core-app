@@ -119,5 +119,10 @@
       }
     }
   },
-  "defaultProject": "material-app"
+  "defaultProject": "material-app",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
