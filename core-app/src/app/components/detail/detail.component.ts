@@ -8,6 +8,8 @@ import { Detail } from '../../model/Detail';
 })
 export class DetailComponent implements OnInit {
 
+  detailCards: Detail[];
+
   constructor() { }
 
   ngOnInit() {

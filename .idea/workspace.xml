@@ -1,10 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d879cb86-a079-41ea-842e-730dc36aa991" name="Default Changelist" comment="module name changed 2 cardbase.io">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="d879cb86-a079-41ea-842e-730dc36aa991" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/tansudasli.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/eligibility/eligibility.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/eligibility/eligibility.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/eligibility/eligibility.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/eligibility/eligibility.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/verify/verify.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/verify/verify.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/verify/verify.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/verify/verify.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-sandbox.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cardbase.io.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/authz/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/authz/login/login.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/login/login.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/authz/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/authz/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/register/register.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/authz/signin/signin.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/signin/signin.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/authz/signin/signin.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/signin/signin.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/authz/signin/signin.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/signin/signin.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/authz/verification/verification.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/verification/verification.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/detail/detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/detail/detail.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/detail/detail.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/detail/detail.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/detail/detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/detail/detail.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/master.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/master.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/master.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/master.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/master.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/master.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/material.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/material.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/styles.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,8 +72,11 @@
     <option name="height" value="877" />
   </component>
   <component name="ProjectId" id="1OoZmgTpxn0KYAsQgiV56Y65xrS" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
@@ -120,7 +152,7 @@
       <workItem from="1564417978001" duration="13211000" />
       <workItem from="1564492384665" duration="22629000" />
       <workItem from="1564645255758" duration="12000" />
-      <workItem from="1564646079984" duration="907000" />
+      <workItem from="1564646079984" duration="12828000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize - static web project">
       <created>1564418198596</created>
@@ -311,7 +343,21 @@
       <option name="project" value="LOCAL" />
       <updated>1564646357943</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="old module names correction (angular-sandbox to cardbase.io) #18">
+      <created>1564647083850</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1564647083850</updated>
+    </task>
+    <task id="LOCAL-00029" summary="old module names correction (angular-sandbox to cardbase.io) #18">
+      <created>1564647252207</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1564647252207</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,6 +380,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initialize - static web project" />
     <MESSAGE value="Initialize - angular app" />
     <MESSAGE value="Initialize - inject material angular app" />
@@ -354,6 +401,7 @@
     <MESSAGE value="Initialize - master data model updated" />
     <MESSAGE value="ng g c creates css file instead of scss file #17" />
     <MESSAGE value="module name changed 2 cardbase.io" />
-    <option name="LAST_COMMIT_MESSAGE" value="module name changed 2 cardbase.io" />
+    <MESSAGE value="old module names correction (angular-sandbox to cardbase.io) #18" />
+    <option name="LAST_COMMIT_MESSAGE" value="old module names correction (angular-sandbox to cardbase.io) #18" />
   </component>
 </project>

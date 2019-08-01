@@ -1,1 +1,10 @@
-<p>login works!</p>
+<!--route to / if, already a user-->
+<div class="container">
+
+  <a mat-raised-button color="primary" (click)="openLink($event)" routerLink="/">
+    <mat-icon>phone</mat-icon>   {{ buttonText }}
+  </a>
+
+  <p>By continuing, you agree {{ companyName }}'s privacy policy and terms of service.</p>
+
+</div>

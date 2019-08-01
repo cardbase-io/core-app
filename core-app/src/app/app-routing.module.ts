@@ -7,15 +7,20 @@ import { RegisterComponent } from './components/authz/register/register.componen
 import { LoginComponent } from './components/authz/login/login.component';
 import { VerificationComponent } from './components/authz/verification/verification.component';
 import { MasterComponent } from './components/master.component';
+import {EligibilityComponent} from './components/authz/eligibility/eligibility.component';
+import {VerifyComponent} from './components/authz/verify/verify.component';
 
 
 const routes: Routes = [
-  { path: 'index', component: MasterComponent },
-  { path: 'detail/:id', component: DetailComponent },
-  { path: 'authz/signin', component: SigninComponent },
-  { path: 'authz/login', component: LoginComponent },
-  { path: 'authz/register', component: RegisterComponent },
-  { path: 'authz/verification', component: VerificationComponent },
+  { path: 'index', component: MasterComponent,  data: { title: 'Master' }  },
+  { path: 'detail/:id', component: DetailComponent,  data: { title: 'Detail' }  },
+  { path: 'detail', component: DetailComponent,  data: { title: 'Detail' }  },
+  { path: 'authz/signin', component: SigninComponent,  data: { title: 'Sign in' }  },
+  { path: 'authz/login', component: LoginComponent,  data: { title: 'Login' }  },
+  { path: 'authz/verify', component: VerifyComponent,  data: { title: 'Verify' }  },
+  { path: 'authz/verification', component: VerificationComponent,  data: { title: 'Verification' }  },
+  { path: 'authz/register', component: RegisterComponent,  data: { title: 'Register' }  },
+  { path: 'eligibility', component: EligibilityComponent,  data: { title: 'Eligibility' }  },
   // { path: 'heroes', component: HeroListComponent, data: { title: 'Heroes List' } },
   { path: '', redirectTo: '/index', pathMatch: 'full' },
   // { path: '**', component: PageNotFoundComponent }

@@ -7,7 +7,7 @@
 </mat-toolbar>
 
 
-<mat-card class="master-card" *ngFor="let item of masterCards">
+<mat-card class="master-card mat-elevation-z1" *ngFor="let item of masterCards">
   <mat-card-header *ngIf="item.cardHeader.title.length > 0">
     <mat-card-title>{{ item.cardHeader.title}}</mat-card-title>
   </mat-card-header>
@@ -24,4 +24,3 @@
     <button mat-button routerLink="{{ buttons.routerLink }}">{{ buttons.btnText}}</button>
   </mat-card-actions>
 </mat-card>
-

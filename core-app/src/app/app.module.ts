@@ -12,6 +12,8 @@ import { RegisterComponent } from './components/authz/register/register.componen
 import { VerificationComponent } from './components/authz/verification/verification.component';
 import { DetailComponent } from './components/detail/detail.component';
 import { MasterComponent } from './components/master.component';
+import { EligibilityComponent } from './components/authz/eligibility/eligibility.component';
+import { VerifyComponent } from './components/authz/verify/verify.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { MasterComponent } from './components/master.component';
     RegisterComponent,
     VerificationComponent,
     DetailComponent,
-    MasterComponent
+    MasterComponent,
+    EligibilityComponent,
+    VerifyComponent
   ],
   imports: [
     BrowserModule,

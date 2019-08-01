@@ -82,3 +82,7 @@ $material-app-theme: mat-light-theme($material-app-primary, $material-app-accent
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.top-menu-spacer { flex: 0.1 1 auto; }
+
+.top-menu-icon { padding: 0 5px; }
