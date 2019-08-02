@@ -11,15 +11,15 @@ import { EligibilityComponent } from './components/authz/eligibility/eligibility
 import { VerifyComponent } from './components/authz/verify/verify.component';
 
 const routes: Routes = [
-  { path: 'index', component: MasterComponent,  data: { title: 'Master', animation: 'masterPage' } },
-  { path: 'detail/:id', component: DetailComponent,  data: { title: 'Detail', animation: 'detailPage' } },
+  { path: 'index', component: MasterComponent,  data: { title: 'Master', animation: 'right' } },
+  { path: 'detail/:id', component: DetailComponent,  data: { title: 'Detail', animation: 'left' } },
   { path: 'detail', component: DetailComponent,  data: { title: 'Detail', animation: 'detailPage' } },
   { path: 'authz/signin', component: SigninComponent,  data: { title: 'Sign in' } },
   { path: 'authz/login', component: LoginComponent,  data: { title: 'Login' } },
-  { path: 'authz/verify', component: VerifyComponent,  data: { title: 'Verify' } },
-  { path: 'authz/verification', component: VerificationComponent,  data: { title: 'Verification' } },
-  { path: 'authz/register', component: RegisterComponent,  data: { title: 'Register' } },
-  { path: 'eligibility', component: EligibilityComponent,  data: { title: 'Eligibility' } },
+  { path: 'authz/verify', component: VerifyComponent,  data: { title: 'Verify', animation: 'left' } },
+  { path: 'authz/verification', component: VerificationComponent,  data: { title: 'Verification', animation: 'left' } },
+  { path: 'authz/register', component: RegisterComponent,  data: { title: 'Register', animation: 'left' } },
+  { path: 'eligibility', component: EligibilityComponent,  data: { title: 'Eligibility', animation: 'left' } },
   // { path: 'heroes', component: HeroListComponent, data: { title: 'Heroes List' } },
   { path: '', redirectTo: '/index', pathMatch: 'full' },
   // { path: '**', component: PageNotFoundComponent }

@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { Master} from '../model/Master';
-import { MatBottomSheet, MatBottomSheetRef } from '@angular/material/bottom-sheet';
+import { Master } from '../model/Master';
+import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { SigninComponent } from './authz/signin/signin.component';
 import { LoginComponent } from './authz/login/login.component';
 

@@ -2,15 +2,6 @@ import { Component } from '@angular/core';
 import { slideInAnimation } from './animations';
 import { RouterOutlet } from '@angular/router';
 
-// import {
-//   trigger,
-//   state,
-//   style,
-//   animate,
-//   transition,
-//   // animation functions
-// } from '@angular/animations';
-
 
 @Component({
   selector: 'app-root',
