@@ -15,11 +15,13 @@ export class Master {
 
   cardHeader: CardHeader;
 
-  cardContent: {title: string;
-                subTitle: string;
-                imageSrcURL: string;
-                imageAltText: string;
-                routerLink: string};
+  cardContent: {
+    title: string;
+    subTitle: string;
+    imageSrcURL: string;
+    imageAltText: string;
+    routerLink: string
+  };
 
   // TODO: cardActions must be and array!
   cardActions: CardActions[];
