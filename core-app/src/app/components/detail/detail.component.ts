@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Detail } from '../../model/Detail';
+import { Detail } from './detail.model';
 
 @Component({
   selector: 'app-detail',

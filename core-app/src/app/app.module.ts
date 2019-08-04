@@ -15,6 +15,8 @@ import { MasterComponent } from './components/master.component';
 import { EligibilityComponent } from './components/authz/eligibility/eligibility.component';
 import { VerifyComponent } from './components/authz/verify/verify.component';
 
+import { FirebaseModule } from './firebase.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +33,8 @@ import { VerifyComponent } from './components/authz/verify/verify.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FirebaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
