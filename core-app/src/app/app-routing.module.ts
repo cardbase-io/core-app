@@ -2,9 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { DetailComponent } from './components/detail/detail.component';
-import { SigninComponent } from './components/authz/signin/signin.component';
 import { RegisterComponent } from './components/authz/register/register.component';
-import { LoginComponent } from './components/authz/login/login.component';
 import { VerificationComponent } from './components/authz/verification/verification.component';
 import { MasterComponent } from './components/master.component';
 import { EligibilityComponent } from './components/authz/eligibility/eligibility.component';

@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d879cb86-a079-41ea-842e-730dc36aa991" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
-    <list id="80a075d7-fbf3-48e5-9e31-a769870ba927" name="auth data model" comment="">
+    <list default="true" id="d879cb86-a079-41ea-842e-730dc36aa991" name="Default Changelist" comment="Merge remote-tracking branch 'origin/v0.2.x-Authz' into v0.2.x-Authz&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;core-app/README.md&#10;#&#9;core-app/src/app/components/detail.model.ts&#10;#&#9;core-app/src/app/components/detail/detail.component.ts&#10;#&#9;core-app/src/app/components/detail/detail.model.ts&#10;#&#9;core-app/src/app/model/Detail.ts&#10;#&#9;core-app/src/environments/environment.ts">
+      <change afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/authentication.service.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/user.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/firebase.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/firebase.module.ts" afterDir="false" />
     </list>
+    <list id="80a075d7-fbf3-48e5-9e31-a769870ba927" name="auth data model" comment="" />
     <list id="30aadfb5-a0a3-408f-9d85-884e28a8469c" name="model files structure" comment="project structure for model files #37" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +46,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -123,12 +127,15 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.Angular Application (material-app)" />
+      <item itemvalue="npm.Angular CLI Server (material-app)" />
+      <item itemvalue="Protractor.E2E Tests (material-app)" />
+    </list>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="d879cb86-a079-41ea-842e-730dc36aa991" name="Default Changelist" comment="" />
-      <changelist id="" name="data model" comment="" />
-      <changelist id="" name="structure changes" comment="" />
       <changelist id="80a075d7-fbf3-48e5-9e31-a769870ba927" name="auth data model" comment="" />
       <changelist id="30aadfb5-a0a3-408f-9d85-884e28a8469c" name="detail data model" comment="" />
       <created>1564417976764</created>
@@ -139,6 +146,7 @@
       <workItem from="1564492384665" duration="22629000" />
       <workItem from="1564645255758" duration="12000" />
       <workItem from="1564646079984" duration="36395000" />
+      <workItem from="1565032049580" duration="1220000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize - static web project">
       <created>1564418198596</created>
@@ -443,7 +451,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -451,7 +461,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Initialize - inject material angular app" />
     <MESSAGE value="Initialize - inject material components w/ separate ./material file" />
     <MESSAGE value="Initialize - Changed from css 2 scss for custom theming. set primary and secondary colors" />
     <MESSAGE value="minor update - the aim and release notes seperated into github wiki" />
@@ -476,6 +485,7 @@
     <MESSAGE value="Initialize auth. additions into code-app &amp; complete configs in firebase, GA #23" />
     <MESSAGE value="project structure for model files #37" />
     <MESSAGE value="Impl. basic data model for auth. pages #21" />
-    <option name="LAST_COMMIT_MESSAGE" value="Impl. basic data model for auth. pages #21" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/v0.2.x-Authz' into v0.2.x-Authz&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;core-app/README.md&#10;#&#9;core-app/src/app/components/detail.model.ts&#10;#&#9;core-app/src/app/components/detail/detail.component.ts&#10;#&#9;core-app/src/app/components/detail/detail.model.ts&#10;#&#9;core-app/src/app/model/Detail.ts&#10;#&#9;core-app/src/environments/environment.ts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/v0.2.x-Authz' into v0.2.x-Authz&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;core-app/README.md&#10;#&#9;core-app/src/app/components/detail.model.ts&#10;#&#9;core-app/src/app/components/detail/detail.component.ts&#10;#&#9;core-app/src/app/components/detail/detail.model.ts&#10;#&#9;core-app/src/app/model/Detail.ts&#10;#&#9;core-app/src/environments/environment.ts" />
   </component>
 </project>
