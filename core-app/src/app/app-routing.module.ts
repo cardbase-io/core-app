@@ -11,7 +11,7 @@ import { EligibilityComponent } from './components/authz/eligibility/eligibility
 import { VerifyComponent } from './components/authz/verify/verify.component';
 
 const routes: Routes = [
-  { path: 'index', component: MasterComponent,  data: { title: 'Master', animation: 'right' } },
+  { path: '', component: MasterComponent,  data: { title: 'Master', animation: 'right' } },
   { path: 'detail/:id', component: DetailComponent,  data: { title: 'Detail', animation: 'left' } },
   { path: 'detail', component: DetailComponent,  data: { title: 'Detail', animation: 'detailPage' } },
   { path: 'authz/signin', component: SigninComponent,  data: { title: 'Sign in' } },
@@ -20,8 +20,7 @@ const routes: Routes = [
   { path: 'authz/verification', component: VerificationComponent,  data: { title: 'Verification', animation: 'left' } },
   { path: 'authz/register', component: RegisterComponent,  data: { title: 'Register', animation: 'left' } },
   { path: 'eligibility', component: EligibilityComponent,  data: { title: 'Eligibility', animation: 'left' } },
-  // { path: 'heroes', component: HeroListComponent, data: { title: 'Heroes List' } },
-  { path: '', redirectTo: '/index', pathMatch: 'full' },
+  // { path: '', redirectTo: 'index', pathMatch: 'full' },
   // { path: '**', component: PageNotFoundComponent }
   ];
 
