@@ -1,8 +1,7 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { Master } from './master.model';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
-import { SigninComponent } from './authz/signin/signin.component';
-import { LoginComponent } from './authz/login/login.component';
+import { AuthenticationComponent } from './authz/authentication.component';
 
 @Component({
   selector: 'app-master',
@@ -10,7 +9,7 @@ import { LoginComponent } from './authz/login/login.component';
   styleUrls: ['./master.component.scss']
 })
 export class MasterComponent implements OnInit, AfterViewInit {
-
+  title: string = 'Home';
   masterCards: Master[];
 
   constructor(private bottomSheet: MatBottomSheet) { }
@@ -46,13 +45,11 @@ export class MasterComponent implements OnInit, AfterViewInit {
   }
 
   /**
-   * opens login or signin pages as a dialog.
+   * opens authentication.component as a bottom sheet (dialog),
+   * and inside this, login or signin logic are handled !
    */
   openBottomSheet(): void {
-  // TODO: this has to implement a logic between login (cookie available) and signin (no-cookie) pages !
-    console.log(Math.random() );
-    Math.random() < 0.6 ?
-      this.bottomSheet.open(SigninComponent) : this.bottomSheet.open(LoginComponent);
+    this.bottomSheet.open(AuthenticationComponent);
   }
 
 }
