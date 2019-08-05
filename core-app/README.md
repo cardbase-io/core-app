@@ -17,6 +17,10 @@ For [release notes](https://github.com/tansudasli/cardbase.io/wiki)
 3. Add an app to that firebase project and update **firebaseConfig** variable!
 4. Install related packages w/ `cd core-app`, then run `npm install firebase @angular/fire` 
 5. Add firebase products to your firebase project in UI. (Authentication)
-
+6. `firebase init` for firebase prod deployment preparations (as hosting option selected)
+7. `ng build --prod`
+8. `firebase deploy`
+9. Complete **OAuth consent** on gcp console ! project-id, logo and support mail address must be filled! mandatory for **signin w/ google**
+10.
 
 
