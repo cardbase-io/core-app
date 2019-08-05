@@ -3,26 +3,40 @@
 <div class="container">
 
   <!--signin related parts-->
-<!--  <ul>-->
+
     <!--  <a mat-raised-button color="primary" (click)="openLink($event)" routerLink="/authz/verify">-->
-    <div class="buttons">
+    <div id="container"  class="buttons" *ngIf="auth.user$ | async as user; else continueAs">
+
+      <a mat-raised-button color="primary" (click)="openLink($event)" routerLink="/">
+        Continue As {{ user.displayName.split(' ', 1) }}
+      </a>
+
+      <!--      TODO:  user impl !-->
+      <a style="text-transform: lowercase; margin-top: 10px; text-decoration: none; color:#757575 "  (click)="auth.signOut()" routerLink="/">
+      <span style="display: flex">Sign in with a different user
+      </span>
+      </a>
+
+    </div>
+
+    <ng-template #continueAs>
+      <!--login related parts-->
       <a mat-raised-button class="firebaseui-idp-google" (click)="auth.googleSignin()" routerLink="/authz/verify">
         <img class="firebaseui-idp-icon" src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg">
         <span class="firebaseui-idp-text">Sign in with Google</span>
       </a>
-    </div>
 
-    <div class="buttons">
-      <a mat-raised-button color="accent" (click)="openLink($event)" routerLink="/authz/verify">
-        <mat-icon>phone</mat-icon>
-        <span class="firebaseui-idp-text-2">Sign in with phone</span>
-      </a>
-    </div>
-<!--  </ul>-->
-  <p>By continuing, you agree {{ companyName }}'s privacy policy and terms of service.</p>
+      <!--      <a mat-raised-button color="accent" (click)="openLink($event)" routerLink="/authz/verify">-->
+      <!--        <mat-icon>phone</mat-icon>-->
+      <!--        <span class="firebaseui-idp-text-2">Sign in with phone</span>-->
+      <!--      </a>-->
+      <p>By continuing, you agree {{ companyName }}'s privacy policy and terms of service.</p>
 
-  <div #login>
-<!--login related parts-->
 
-  </div>
+
+    </ng-template>
+
+
+
+
 </div>

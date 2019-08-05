@@ -7,7 +7,7 @@ import { AngularFireAuth } from '@angular/fire/auth';
 import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/firestore';
 
 import { Observable, of } from 'rxjs';
-import { switchMap } from 'rxjs/operators';
+import {map, switchMap} from 'rxjs/operators';
 import * as firebase from 'firebase';
 import { User } from './user.model';
 
@@ -18,20 +18,26 @@ export class AuthenticationService {
 
   //User's user document in firestore! And that will be shared across the app.
   user$: Observable<any>;
+  displayName: Observable<any>;
 
   constructor(private afAuth: AngularFireAuth, private afs: AngularFirestore, private router: Router) {
 
     //user-in-firebase-Authentication console !
-    this.afAuth.user.subscribe(user => {
+    this.displayName = this.afAuth.authState.pipe(
+      map(authState => {
+        console.log(authState);
 
-      user == null ? console.log('no logged user') : console.log(user.toJSON());
-    });
+        authState != null ? authState.displayName : null;
+      })
+    );
 
     //user-in-firebase-Authentication w/ user-in-firestore record
     this.user$ = this.afAuth.authState.pipe(
       switchMap(user => {
         if (user) {
-          console.log(user.phoneNumber);
+          console.log(user.displayName);
+          this.displayName = of(user.displayName);
+          console.log(this.displayName);
 
           return this.afs.doc<User>(`users/${user.uid}`).valueChanges();
         }
@@ -44,14 +50,14 @@ export class AuthenticationService {
 
   async googleSignin() {
     const provider = new auth.GoogleAuthProvider();
-    //TODO: if we can get phoneNumber from google, (after user-consent), then registartion process becomes faster!
+    //TODO: if we can get phoneNumber from google, (after user-consent), then registration process becomes faster!
     // provider.addScope('phoneNumber');
 
     //const credential = await this.afAuth.auth.signInWithPopup(provider);
     await this.afAuth.auth.signInWithPopup(provider).then(result => {
       console.log(result.user.toJSON());
 
-      this.updateUserData(result.user);
+      //this.updateUserData(result.user);
 
     });
 
