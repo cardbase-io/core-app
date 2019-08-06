@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Detail } from '../../model/Detail';
+import { Detail } from './detail.model';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-detail',
@@ -10,7 +11,13 @@ export class DetailComponent implements OnInit {
 
   detailCards: Detail[];
 
-  constructor() {
+  constructor(private route: ActivatedRoute) {
+
+    //get id param
+    this.route.params.subscribe(res => {
+      console.log(`id: ${res.id}`);
+    });
+
     // TODO: init dummy data
     this.detailCards = [
       {

@@ -1,0 +1,44 @@
+<!--handle login or signin login and render page according to that !-->
+
+<div class="container">
+
+<!--signin related parts-->
+
+<!--  <a mat-raised-button color="primary" (click)="openLink($event)" routerLink="/authz/verify">-->
+    <div id="container"  class="buttons" *ngIf="auth.user$ | async as user; else continueAs">
+
+      <a mat-raised-button color="primary" (click)="openLink($event)" routerLink="/">
+        Continue As {{ user.displayName.split(' ', 1) }}
+      </a>
+
+ <!--      TODO:  later this signOut should go under hamburger-menu pages!-->
+      <a style="text-transform: lowercase; margin-top: 10px; text-decoration: none; color:#757575 "
+            (click)="auth.signOut()" routerLink="/">
+      Sign in with a different user
+      </a>
+
+    </div>
+
+<!--login related parts-->
+    <ng-template #continueAs>
+
+<!--   after google-signin (if we get phoneNumber), route to /   -->
+      <a mat-raised-button class="firebaseui-idp-google" (click)="auth.googleSignin()" routerLink="/">
+        <img class="firebaseui-idp-icon" src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg">
+        <span class="firebaseui-idp-text">Sign in with Google</span>
+      </a>
+
+<!--  after phone-signin, route to /authz/verify  -->
+      <!--      <a mat-raised-button color="accent" (click)="openLink($event)" routerLink="/authz/verify">-->
+      <!--        <mat-icon>phone</mat-icon>-->
+      <!--        <span class="firebaseui-idp-text-2">Sign in with phone</span>-->
+      <!--      </a>-->
+<!--     TODO: create privacy policy and tos pages, -->
+      <p>By continuing, you agree {{ companyName }}'s privacy policy and terms of service.</p>
+
+    </ng-template>
+
+
+
+
+</div>

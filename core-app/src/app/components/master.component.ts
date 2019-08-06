@@ -1,8 +1,8 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { Master } from '../model/Master';
+import { Master } from './master.model';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
-import { SigninComponent } from './authz/signin/signin.component';
-import { LoginComponent } from './authz/login/login.component';
+import { AuthenticationComponent } from './authz/authentication.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-master',
@@ -10,10 +10,11 @@ import { LoginComponent } from './authz/login/login.component';
   styleUrls: ['./master.component.scss']
 })
 export class MasterComponent implements OnInit, AfterViewInit {
-
+  title: string = 'Home';
   masterCards: Master[];
 
-  constructor(private bottomSheet: MatBottomSheet) { }
+  constructor(private bottomSheet: MatBottomSheet,
+              private router: Router) { }
 
   ngOnInit() {
     // TODO: init dummy data
@@ -42,17 +43,22 @@ export class MasterComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
+    // TODO: put a logic, to control below fn.
+    //  onFirstLoad, show
+    //  if users backs from another page, don't show
     this.openBottomSheet();
+
   }
 
   /**
-   * opens login or signin pages as a dialog.
+   * opens authentication.component as a bottom sheet (dialog),
+   * and inside this, login or signin logic are handled !
+   *
+   * Once you pressed login or continued-as, you should not see bottomSheet anymore. Esp. after back navigation
    */
   openBottomSheet(): void {
-  // TODO: this has to implement a logic between login (cookie available) and signin (no-cookie) pages !
-    console.log(Math.random() );
-    Math.random() < 0.6 ?
-      this.bottomSheet.open(SigninComponent) : this.bottomSheet.open(LoginComponent);
+
+      this.bottomSheet.open(AuthenticationComponent);
   }
 
 }

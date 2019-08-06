@@ -5,7 +5,7 @@ export class CardActions {
   routerLink: string;
 }
 
-export class Detail {
+export class Detail{
   parentId: number;
   id: number;
 

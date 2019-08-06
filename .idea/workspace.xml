@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d879cb86-a079-41ea-842e-730dc36aa991" name="Default Changelist" comment="Impl. basic data model for all pages #20">
+    <list default="true" id="d879cb86-a079-41ea-842e-730dc36aa991" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/animations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/animations.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/authz/verification/verification.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/verification/verification.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/authz/verify/verify.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/verify/verify.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/detail/detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/detail/detail.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/authz/authentication.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/authentication.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/authz/authentication.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/authentication.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core-app/src/app/components/master.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/master.component.ts" afterDir="false" />
     </list>
-    <list id="06ea1555-bb37-4923-ab40-e3af002d31d4" name="data model Change List" comment="Impl. basic data model for all pages #20" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,10 +30,19 @@
     <option name="PRESERVE_MERGES" value="true" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="PUSH_TAGS">
-      <GitPushTagMode />
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
     </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -73,14 +77,15 @@
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/core-app/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/core-app/src/app" />
+      <recent name="$PROJECT_DIR$/core-app/src/app/components/detail" />
       <recent name="$PROJECT_DIR$/core-app/src/app/components" />
+      <recent name="$PROJECT_DIR$/core-app/src/app" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -118,11 +123,15 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.Angular Application (material-app)" />
+      <item itemvalue="npm.Angular CLI Server (material-app)" />
+      <item itemvalue="Protractor.E2E Tests (material-app)" />
+    </list>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="d879cb86-a079-41ea-842e-730dc36aa991" name="Default Changelist" comment="" />
-      <changelist id="06ea1555-bb37-4923-ab40-e3af002d31d4" name="data model" comment="" />
       <created>1564417976764</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -130,7 +139,10 @@
       <workItem from="1564417978001" duration="13211000" />
       <workItem from="1564492384665" duration="22629000" />
       <workItem from="1564645255758" duration="12000" />
-      <workItem from="1564646079984" duration="26912000" />
+      <workItem from="1564646079984" duration="36395000" />
+      <workItem from="1565032049580" duration="11388000" />
+      <workItem from="1565052405200" duration="5860000" />
+      <workItem from="1565077551688" duration="432000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize - static web project">
       <created>1564418198596</created>
@@ -356,7 +368,98 @@
       <option name="project" value="LOCAL" />
       <updated>1564749115752</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="initialize basic animations #8">
+      <created>1564752520799</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1564752520799</updated>
+    </task>
+    <task id="LOCAL-00034" summary="initialize basic animations #8">
+      <created>1564752539741</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1564752539741</updated>
+    </task>
+    <task id="LOCAL-00035" summary="initialize basic animations #8">
+      <created>1564752667278</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1564752667278</updated>
+    </task>
+    <task id="LOCAL-00036" summary="project structure for model files #37">
+      <created>1564919210875</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1564919210876</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Initialize auth. additions into code-app &amp; complete configs in firebase, GA #23">
+      <created>1564921470002</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1564921470002</updated>
+    </task>
+    <task id="LOCAL-00038" summary="project structure for model files #37">
+      <created>1564938513095</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1564938513095</updated>
+    </task>
+    <task id="LOCAL-00039" summary="project structure for model files #37">
+      <created>1564938912097</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1564938912097</updated>
+    </task>
+    <task id="LOCAL-00040" summary="project structure for model files #37">
+      <created>1564939136443</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1564939136443</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Impl. basic data model for auth. pages #21">
+      <created>1564939170746</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1564939170746</updated>
+    </task>
+    <task id="LOCAL-00042" summary="impl. auth. w/ google capabilities #41">
+      <created>1565033439991</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1565033439991</updated>
+    </task>
+    <task id="LOCAL-00043" summary="impl. auth. w/ google capabilities #41">
+      <created>1565044310038</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1565044310038</updated>
+    </task>
+    <task id="LOCAL-00044" summary="force google account selection even if user logged in before #43">
+      <created>1565072221262</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1565072221263</updated>
+    </task>
+    <task id="LOCAL-00045" summary="routes after google signin should be / not /verify #44">
+      <created>1565072367633</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1565072367633</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,7 +475,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -380,12 +485,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Initialize - static web project" />
-    <MESSAGE value="Initialize - angular app" />
-    <MESSAGE value="Initialize - inject material angular app" />
-    <MESSAGE value="Initialize - inject material components w/ separate ./material file" />
-    <MESSAGE value="Initialize - Changed from css 2 scss for custom theming. set primary and secondary colors" />
-    <MESSAGE value="minor update - the aim and release notes seperated into github wiki" />
     <MESSAGE value="minor update - theming test" />
     <MESSAGE value="minor update - domain name" />
     <MESSAGE value="module name renamed" />
@@ -402,8 +501,15 @@
     <MESSAGE value="module name changed 2 cardbase.io" />
     <MESSAGE value="old module names correction (angular-sandbox to cardbase.io) #18" />
     <MESSAGE value="initialize material components #6" />
-    <MESSAGE value="initialize basic animations #8" />
     <MESSAGE value="Impl. basic data model for all pages #20" />
-    <option name="LAST_COMMIT_MESSAGE" value="Impl. basic data model for all pages #20" />
+    <MESSAGE value="initialize basic animations #8" />
+    <MESSAGE value="Initialize auth. additions into code-app &amp; complete configs in firebase, GA #23" />
+    <MESSAGE value="project structure for model files #37" />
+    <MESSAGE value="Impl. basic data model for auth. pages #21" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/v0.2.x-Authz' into v0.2.x-Authz&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;core-app/README.md&#10;#&#9;core-app/src/app/components/detail.model.ts&#10;#&#9;core-app/src/app/components/detail/detail.component.ts&#10;#&#9;core-app/src/app/components/detail/detail.model.ts&#10;#&#9;core-app/src/app/model/Detail.ts&#10;#&#9;core-app/src/environments/environment.ts" />
+    <MESSAGE value="impl. auth. w/ google capabilities #41" />
+    <MESSAGE value="force google account selection even if user logged in before #43" />
+    <MESSAGE value="routes after google signin should be / not /verify #44" />
+    <option name="LAST_COMMIT_MESSAGE" value="routes after google signin should be / not /verify #44" />
   </component>
 </project>
