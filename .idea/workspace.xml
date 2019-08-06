@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d879cb86-a079-41ea-842e-730dc36aa991" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/tansudasli.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/tansudasli.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core-app/src/app/components/authz/authentication.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/authentication.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/authz/authentication.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/authentication.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/authz/authentication.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/authentication.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/authz/authentication.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/authentication.service.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -134,8 +130,6 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="d879cb86-a079-41ea-842e-730dc36aa991" name="Default Changelist" comment="" />
-      <changelist id="" name="auth data model" comment="" />
-      <changelist id="" name="detail data model" comment="" />
       <created>1564417976764</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -144,7 +138,8 @@
       <workItem from="1564492384665" duration="22629000" />
       <workItem from="1564645255758" duration="12000" />
       <workItem from="1564646079984" duration="36395000" />
-      <workItem from="1565032049580" duration="10097000" />
+      <workItem from="1565032049580" duration="11388000" />
+      <workItem from="1565052405200" duration="1479000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize - static web project">
       <created>1564418198596</created>
@@ -440,7 +435,21 @@
       <option name="project" value="LOCAL" />
       <updated>1565033439991</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="impl. auth. w/ google capabilities #41">
+      <created>1565044310038</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1565044310038</updated>
+    </task>
+    <task id="LOCAL-00044" summary="force google account selection even if user logged in before #43">
+      <created>1565072221262</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1565072221263</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +475,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Initialize - Changed from css 2 scss for custom theming. set primary and secondary colors" />
     <MESSAGE value="minor update - the aim and release notes seperated into github wiki" />
     <MESSAGE value="minor update - theming test" />
     <MESSAGE value="minor update - domain name" />
@@ -491,6 +499,7 @@
     <MESSAGE value="Impl. basic data model for auth. pages #21" />
     <MESSAGE value="Merge remote-tracking branch 'origin/v0.2.x-Authz' into v0.2.x-Authz&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;core-app/README.md&#10;#&#9;core-app/src/app/components/detail.model.ts&#10;#&#9;core-app/src/app/components/detail/detail.component.ts&#10;#&#9;core-app/src/app/components/detail/detail.model.ts&#10;#&#9;core-app/src/app/model/Detail.ts&#10;#&#9;core-app/src/environments/environment.ts" />
     <MESSAGE value="impl. auth. w/ google capabilities #41" />
-    <option name="LAST_COMMIT_MESSAGE" value="impl. auth. w/ google capabilities #41" />
+    <MESSAGE value="force google account selection even if user logged in before #43" />
+    <option name="LAST_COMMIT_MESSAGE" value="force google account selection even if user logged in before #43" />
   </component>
 </project>
