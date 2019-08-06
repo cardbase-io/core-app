@@ -119,7 +119,6 @@ export class AuthenticationService {
        console.log('signOut error occurred' + error.toString());
      });
 
-     return this.router.navigate(['/']);
   }
 
   /**
