@@ -35,9 +35,7 @@ export class AuthenticationService {
     this.user$ = this.afAuth.authState.pipe(
       switchMap(user => {
         if (user) {
-          console.log(user.displayName);
           this.displayName = of(user.displayName);
-          console.log(this.displayName);
 
           return this.afs.doc<User>(`users/${user.uid}`).valueChanges();
         }
@@ -51,13 +49,14 @@ export class AuthenticationService {
   async googleSignin() {
     const provider = new auth.GoogleAuthProvider();
     //TODO: if we can get phoneNumber from google, (after user-consent), then registration process becomes faster!
-    // provider.addScope('phoneNumber');
+    //provider.addScope('prompt');
+    provider.setCustomParameters({'prompt' : 'select_account'});
 
     //const credential = await this.afAuth.auth.signInWithPopup(provider);
     await this.afAuth.auth.signInWithPopup(provider).then(result => {
       console.log(result.user.toJSON());
 
-      //this.updateUserData(result.user);
+      this.updateUserData(result.user);
 
     });
 
@@ -112,7 +111,13 @@ export class AuthenticationService {
   }
 
   async signOut() {
-     await this.afAuth.auth.signOut();
+     await this.afAuth.auth.signOut().then(() => {
+       //successful signOut
+       console.log('signOut successful');
+
+     }).catch(error => {
+       console.log('signOut error occurred' + error.toString());
+     });
 
      return this.router.navigate(['/']);
   }
