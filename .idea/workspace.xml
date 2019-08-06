@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d879cb86-a079-41ea-842e-730dc36aa991" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/authz/authentication.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/authentication.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/authz/authentication.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/authentication.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/authz/authentication.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/authz/authentication.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-app/src/app/components/master.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core-app/src/app/components/master.component.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +141,8 @@
       <workItem from="1564645255758" duration="12000" />
       <workItem from="1564646079984" duration="36395000" />
       <workItem from="1565032049580" duration="11388000" />
-      <workItem from="1565052405200" duration="1479000" />
+      <workItem from="1565052405200" duration="5860000" />
+      <workItem from="1565077551688" duration="432000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize - static web project">
       <created>1564418198596</created>
@@ -449,7 +452,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565072221263</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="routes after google signin should be / not /verify #44">
+      <created>1565072367633</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1565072367633</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,7 +485,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="minor update - the aim and release notes seperated into github wiki" />
     <MESSAGE value="minor update - theming test" />
     <MESSAGE value="minor update - domain name" />
     <MESSAGE value="module name renamed" />
@@ -500,6 +509,7 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/v0.2.x-Authz' into v0.2.x-Authz&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;core-app/README.md&#10;#&#9;core-app/src/app/components/detail.model.ts&#10;#&#9;core-app/src/app/components/detail/detail.component.ts&#10;#&#9;core-app/src/app/components/detail/detail.model.ts&#10;#&#9;core-app/src/app/model/Detail.ts&#10;#&#9;core-app/src/environments/environment.ts" />
     <MESSAGE value="impl. auth. w/ google capabilities #41" />
     <MESSAGE value="force google account selection even if user logged in before #43" />
-    <option name="LAST_COMMIT_MESSAGE" value="force google account selection even if user logged in before #43" />
+    <MESSAGE value="routes after google signin should be / not /verify #44" />
+    <option name="LAST_COMMIT_MESSAGE" value="routes after google signin should be / not /verify #44" />
   </component>
 </project>

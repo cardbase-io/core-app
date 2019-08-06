@@ -23,7 +23,6 @@ export class AuthenticationComponent implements OnInit {
    * @param event
    */
   openLink(event: MouseEvent): void {
-    //this.auth.googleSignin().then(result => console.log(result));
 
     this.bottomSheetRef.dismiss();
     event.preventDefault();
