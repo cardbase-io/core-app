@@ -22,23 +22,23 @@ export class MasterComponent implements OnInit, AfterViewInit {
 
     this.masterCards = [
     {
-      id: 123,
+      documentId: 123,
+      cardHeader: {title: '', avatarURL: ''},
       cardContent: {title: 'title',
                     subTitle: 'subtitle',
                     imageSrcURL: 'https://dummyimage.com/600x400/fefefe/969396.jpg&text=card',
                     imageAltText: 'hint',
                     routerLink: '/detail/123'},
-      cardHeader: {title: '', avatarURL: ''},
       location: {latitude: 30, longitude: 32}
     },
     {
-      id: 124,
+      documentId: 124,
+      cardHeader: {title: '', avatarURL: ''},
       cardContent: {title: 'title',
                     subTitle: 'subtitle',
                     imageSrcURL: 'https://dummyimage.com/600x400/fefefe/969396.jpg&text=card',
                     imageAltText: 'hint',
                     routerLink: '/detail/124'},
-      cardHeader: {title: '', avatarURL: ''}
     }];
 
   }

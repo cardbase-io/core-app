@@ -15,14 +15,14 @@ export class DetailComponent implements OnInit {
 
     //get parentId param from url
     this.route.params.subscribe(res => {
-      console.log(`parentId: ${res.id}`);
+      console.log(`parentDocumentId: ${res.documentId}`);
     });
 
     // TODO: init dummy data
     this.detailCards = [
       {
-        parentId: 123,
-        id: 1,
+        parentDocumentId: 123,
+        documentId: 1,
 
         cardContent: {
           title: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...',
@@ -33,8 +33,8 @@ export class DetailComponent implements OnInit {
         }
       },
       {
-        parentId: 123,
-        id: 2,
+        parentDocumentId: 123,
+        documentId: 2,
 
         cardContent: {
           title: 'Lorem ipsum dolor sit amet.',
@@ -45,8 +45,8 @@ export class DetailComponent implements OnInit {
         }
       },
       {
-        parentId: 123,
-        id: 3,
+        parentDocumentId: 123,
+        documentId: 3,
 
         cardContent: {
           title: 'Lorem ipsum dolor sit amet.',
@@ -57,20 +57,20 @@ export class DetailComponent implements OnInit {
         }
       },
       {
-        parentId: 123,
-        id: 4,
+        parentDocumentId: 123,
+        documentId: 4,
 
         cardContent: {
           title: 'Lorem ipsum dolor sit amet.',
           headline: '',
           icon: '',
-          tags: 'lorem • ipsum',
+          tags: 'lorem • amet',
           externalRouterLink: 'listening-app/4'
         }
       },
       {
-        parentId: 123,
-        id: 5,
+        parentDocumentId: 123,
+        documentId: 5,
 
         cardContent: {
           title: 'Lorem ipsum dolor sit amet.',
@@ -81,8 +81,8 @@ export class DetailComponent implements OnInit {
         }
       },
       {
-        parentId: 123,
-        id: 6,
+        documentId: 123,
+        parentDocumentId: 6,
 
         cardContent: {
           title: 'Lorem ipsum dolor sit amet.',
@@ -93,8 +93,8 @@ export class DetailComponent implements OnInit {
         }
       },
       {
-        parentId: 123,
-        id: 7,
+        parentDocumentId: 123,
+        documentId: 7,
 
         cardContent: {
           title: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...',
@@ -105,8 +105,8 @@ export class DetailComponent implements OnInit {
         }
       },
       {
-        parentId: 123,
-        id: 8,
+        parentDocumentId: 123,
+        documentId: 8,
 
         cardContent: {
           title: 'Lorem ipsum dolor sit amet.',
@@ -117,8 +117,8 @@ export class DetailComponent implements OnInit {
         }
       },
       {
-        parentId: 123,
-        id: 9,
+        parentDocumentId: 123,
+        documentId: 9,
 
         cardContent: {
           title: 'Lorem ipsum dolor sit amet.',
@@ -129,8 +129,8 @@ export class DetailComponent implements OnInit {
         }
       },
       {
-        parentId: 123,
-        id: 10,
+        parentDocumentId: 123,
+        documentId: 10,
 
         cardContent: {
           title: 'Lorem ipsum dolor sit amet.',
@@ -141,8 +141,8 @@ export class DetailComponent implements OnInit {
         }
       },
       {
-        parentId: 123,
-        id: 11,
+        parentDocumentId: 123,
+        documentId: 11,
 
         cardContent: {
           title: 'Lorem ipsum dolor sit amet.',
@@ -153,8 +153,8 @@ export class DetailComponent implements OnInit {
         }
       },
       {
-        parentId: 123,
-        id: 12,
+        parentDocumentId: 123,
+        documentId: 12,
 
         cardContent: {
           title: 'Lorem ipsum dolor sit amet.',

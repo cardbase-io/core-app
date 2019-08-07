@@ -4,6 +4,7 @@ enum Channel {
   SMS,
   PUSH,
   PHONE,
+  WEB
 }
 
 /*
@@ -25,22 +26,21 @@ class Consent {
   channel: Channel;
 }
 
-//TODO: what kind of user related data we want to gather. lastSignedin or all historical signedins
+// TODO: what kind of user related data we want to gather. lastSignedin or all historical signedins
+// TODO: calculate from phone number in here or in a big data job or firebase function?
 export class User {
-  uid: string; //UUID
+  uid: string;             //uuid
   displayName: string;
-  phoneNumber: string;     //from google or sign-in-w/phone
   email: string;
-  // TODO: calculate from phone number in here or in a big data job or firebase function?
-  country?: string;
+  phoneNumber: string;     //from google or sign-in-w/phone
   photoURL?: string;       //from google
   emailVerified?: boolean; //from google
   isAnonymous?: boolean;   //from google
   lastLoginAt?: number;    //from google
 
-  // created?: string;
-  // signedIn?: string;
+  country?: string;
+  created?: string;
 
-  terms_privacy?: string[]; //historical, //website subscription on 2017/03/01 expires 2018/03/01
-  optIn?: Consent[];   //by channels
+  termsPrivacy?: string[]; //website subscription on 2017/03/01 expires 2018/03/01
+  optIn?: Consent[];       //by channels
 }

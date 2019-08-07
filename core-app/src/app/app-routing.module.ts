@@ -11,7 +11,7 @@ import { AuthenticationComponent } from './components/authz/authentication.compo
 
 const routes: Routes = [
   { path: '', component: MasterComponent,  data: { title: 'Master', animation: 'right' } },
-  { path: 'detail/:id', component: DetailComponent,  data: { title: 'Detail', animation: 'left' } },
+  { path: 'detail/:documentId', component: DetailComponent,  data: { title: 'Detail', animation: 'left' } },
   { path: 'detail', component: DetailComponent,  data: { title: 'Detail', animation: 'detailPage' } },
   { path: 'authz/signin', component: AuthenticationComponent,  data: { title: 'Sign in' } },
   { path: 'authz/verify', component: VerifyComponent,  data: { title: 'Verify', animation: 'left' } },

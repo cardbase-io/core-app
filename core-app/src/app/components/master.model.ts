@@ -9,7 +9,7 @@ export class location {
 }
 
 export class Master {
-  id: number;  //uuid
+  documentId: number;           //uuid
 
   cardHeader: CardHeader;
 
