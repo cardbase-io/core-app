@@ -13,9 +13,9 @@ export class DetailComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) {
 
-    //get id param
+    //get parentId param from url
     this.route.params.subscribe(res => {
-      console.log(`id: ${res.id}`);
+      console.log(`parentId: ${res.id}`);
     });
 
     // TODO: init dummy data
@@ -30,8 +30,7 @@ export class DetailComponent implements OnInit {
           icon: 'lock',
           tags: 'lorem • ipsum • dolor',
           externalRouterLink: 'listening-app/1'
-        },
-        cardActions: []
+        }
       },
       {
         parentId: 123,
@@ -43,8 +42,7 @@ export class DetailComponent implements OnInit {
           icon: '',
           tags: 'lorem • ipsum • dolor',
           externalRouterLink: 'listening-app/2'
-        },
-        cardActions: []
+        }
       },
       {
         parentId: 123,
@@ -56,8 +54,7 @@ export class DetailComponent implements OnInit {
           icon: '',
           tags: 'lorem • ipsum',
           externalRouterLink: 'listening-app/3'
-        },
-        cardActions: []
+        }
       },
       {
         parentId: 123,
@@ -69,8 +66,7 @@ export class DetailComponent implements OnInit {
           icon: '',
           tags: 'lorem • ipsum',
           externalRouterLink: 'listening-app/4'
-        },
-        cardActions: []
+        }
       },
       {
         parentId: 123,
@@ -82,8 +78,7 @@ export class DetailComponent implements OnInit {
           icon: '',
           tags: 'lorem • ipsum',
           externalRouterLink: 'listening-app/5'
-        },
-        cardActions: []
+        }
       },
       {
         parentId: 123,
@@ -95,8 +90,7 @@ export class DetailComponent implements OnInit {
           icon: 'lock',
           tags: 'lorem • ipsum • sit',
           externalRouterLink: 'listening-app/6'
-        },
-        cardActions: []
+        }
       },
       {
         parentId: 123,
@@ -108,8 +102,7 @@ export class DetailComponent implements OnInit {
           icon: 'lock',
           tags: 'lorem • ipsum • dolor',
           externalRouterLink: 'listening-app/7'
-        },
-        cardActions: []
+        }
       },
       {
         parentId: 123,
@@ -121,8 +114,7 @@ export class DetailComponent implements OnInit {
           icon: '',
           tags: 'lorem • ipsum • dolor',
           externalRouterLink: 'listening-app/8'
-        },
-        cardActions: []
+        }
       },
       {
         parentId: 123,
@@ -134,8 +126,7 @@ export class DetailComponent implements OnInit {
           icon: '',
           tags: 'lorem • ipsum',
           externalRouterLink: 'listening-app/9'
-        },
-        cardActions: []
+        }
       },
       {
         parentId: 123,
@@ -147,8 +138,7 @@ export class DetailComponent implements OnInit {
           icon: '',
           tags: 'lorem • ipsum',
           externalRouterLink: 'listening-app/10'
-        },
-        cardActions: []
+        }
       },
       {
         parentId: 123,
@@ -160,8 +150,7 @@ export class DetailComponent implements OnInit {
           icon: '',
           tags: 'lorem • ipsum',
           externalRouterLink: 'listening-app/11'
-        },
-        cardActions: []
+        }
       },
       {
         parentId: 123,
@@ -173,8 +162,7 @@ export class DetailComponent implements OnInit {
           icon: 'lock',
           tags: 'lorem • ipsum • sit',
           externalRouterLink: 'listening-app/12'
-        },
-        cardActions: []
+        }
       }
     ];
   }
