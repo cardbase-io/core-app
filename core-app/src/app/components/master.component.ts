@@ -43,12 +43,14 @@ export class MasterComponent implements OnInit, AfterViewInit {
 
   }
 
+  /**
+   * onFirstLoad (not logged yet), show
+   * if users backs from another page, don't show (already logged)
+   */
   ngAfterViewInit() {
-    // TODO: put a logic, to control below fn.
-    //  onFirstLoad, show
-    //  if users backs from another page, don't show
-    this.openBottomSheet();
 
+    if (!this.afAuth.auth.currentUser)
+      this.openBottomSheet();
   }
 
   /**
