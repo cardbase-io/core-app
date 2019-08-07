@@ -18,9 +18,4 @@
     <mat-card-title>{{ item.cardContent.title}}</mat-card-title>
     <mat-card-subtitle>{{ item.cardContent.subTitle}}</mat-card-subtitle>
   </mat-card-content>
-
-<!--  TODO: more than 1 buttons must be horizontal -->
-  <mat-card-actions *ngFor="let buttons of item.cardActions">
-    <button mat-button routerLink="{{ buttons.routerLink }}">{{ buttons.btnText}}</button>
-  </mat-card-actions>
 </mat-card>

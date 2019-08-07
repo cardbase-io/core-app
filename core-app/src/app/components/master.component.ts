@@ -3,6 +3,7 @@ import { Master } from './master.model';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { AuthenticationComponent } from './authz/authentication.component';
 import { Router } from '@angular/router';
+import {AngularFireAuth} from '@angular/fire/auth';
 
 @Component({
   selector: 'app-master',
@@ -10,14 +11,15 @@ import { Router } from '@angular/router';
   styleUrls: ['./master.component.scss']
 })
 export class MasterComponent implements OnInit, AfterViewInit {
-  title: string = 'Home';
+  title = 'Home';
   masterCards: Master[];
 
   constructor(private bottomSheet: MatBottomSheet,
-              private router: Router) { }
+              private router: Router,
+              private afAuth: AngularFireAuth) { }
 
   ngOnInit() {
-    // TODO: init dummy data
+
     this.masterCards = [
     {
       id: 123,
@@ -27,7 +29,7 @@ export class MasterComponent implements OnInit, AfterViewInit {
                     imageAltText: 'hint',
                     routerLink: '/detail/123'},
       cardHeader: {title: '', avatarURL: ''},
-      cardActions: []
+      location: {latitude: 30, longitude: 32}
     },
     {
       id: 124,
@@ -36,8 +38,7 @@ export class MasterComponent implements OnInit, AfterViewInit {
                     imageSrcURL: 'https://dummyimage.com/600x400/fefefe/969396.jpg&text=card',
                     imageAltText: 'hint',
                     routerLink: '/detail/124'},
-      cardHeader: {title: '', avatarURL: ''},
-      cardActions: []
+      cardHeader: {title: '', avatarURL: ''}
     }];
 
   }
