@@ -18,24 +18,14 @@ export class AuthenticationService {
 
   //User's user document in firestore! And that will be shared across the app.
   user$: Observable<any>;
-  displayName: Observable<any>;
 
   constructor(private afAuth: AngularFireAuth, private afs: AngularFirestore, private router: Router) {
 
-    //user-in-firebase-Authentication console !
-    this.displayName = this.afAuth.authState.pipe(
-      map(authState => {
-        console.log(authState);
-
-        authState != null ? authState.displayName : null;
-      })
-    );
 
     //user-in-firebase-Authentication w/ user-in-firestore record
     this.user$ = this.afAuth.authState.pipe(
       switchMap(user => {
         if (user) {
-          this.displayName = of(user.displayName);
 
           return this.afs.doc<User>(`users/${user.uid}`).valueChanges();
         }

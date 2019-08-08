@@ -3,15 +3,13 @@ export class CardHeader {
   avatarURL: string;
 }
 
-export class CardActions {
-  btnText: string;
-  btnPostURL: string;
-  routerLink: string;
+export class location {
+  latitude: number;
+  longitude: number;
 }
 
-
 export class Master {
-  id: number;
+  documentId: string;           //uuid
 
   cardHeader: CardHeader;
 
@@ -23,8 +21,7 @@ export class Master {
     routerLink: string
   };
 
-  // TODO: cardActions must be and array!
-  cardActions: CardActions[];
+  location?: location;
+  createdAt?: string;
 
-  // TODO: update model field names
 }

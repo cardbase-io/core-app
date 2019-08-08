@@ -3,6 +3,11 @@ import { Master } from './master.model';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { AuthenticationComponent } from './authz/authentication.component';
 import { Router } from '@angular/router';
+import { AngularFireAuth } from '@angular/fire/auth';
+import {Observable, of} from 'rxjs';
+import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from '@angular/fire/firestore';
+import {switchMap, map} from 'rxjs/operators';
+import {User} from './authz/user.model';
 
 @Component({
   selector: 'app-master',
@@ -10,44 +15,35 @@ import { Router } from '@angular/router';
   styleUrls: ['./master.component.scss']
 })
 export class MasterComponent implements OnInit, AfterViewInit {
-  title: string = 'Home';
-  masterCards: Master[];
+  title = 'Home';
+
+  masterCardsCollection: AngularFirestoreCollection<Master>;
+  masterCards: Observable<Master[]>;
+
+  currentDocumentId: string;
+  snapshot: any;
 
   constructor(private bottomSheet: MatBottomSheet,
-              private router: Router) { }
+              private router: Router,
+              private afAuth: AngularFireAuth,
+              private db: AngularFirestore) { }
 
   ngOnInit() {
-    // TODO: init dummy data
-    this.masterCards = [
-    {
-      id: 123,
-      cardContent: {title: 'title',
-                    subTitle: 'subtitle',
-                    imageSrcURL: 'https://dummyimage.com/600x400/fefefe/969396.jpg&text=card',
-                    imageAltText: 'hint',
-                    routerLink: '/detail/123'},
-      cardHeader: {title: '', avatarURL: ''},
-      cardActions: []
-    },
-    {
-      id: 124,
-      cardContent: {title: 'title',
-                    subTitle: 'subtitle',
-                    imageSrcURL: 'https://dummyimage.com/600x400/fefefe/969396.jpg&text=card',
-                    imageAltText: 'hint',
-                    routerLink: '/detail/124'},
-      cardHeader: {title: '', avatarURL: ''},
-      cardActions: []
-    }];
+
+    this.masterCardsCollection = this.db.collection('masterCards');
+    this.masterCards = this.masterCardsCollection.valueChanges({idField: 'documentId'});
+
 
   }
 
+  /**
+   * onFirstLoad (not logged yet), show
+   * if users backs from another page, don't show (already logged)
+   */
   ngAfterViewInit() {
-    // TODO: put a logic, to control below fn.
-    //  onFirstLoad, show
-    //  if users backs from another page, don't show
-    this.openBottomSheet();
 
+    if (!this.afAuth.auth.currentUser)
+      this.openBottomSheet();
   }
 
   /**
@@ -61,4 +57,9 @@ export class MasterComponent implements OnInit, AfterViewInit {
       this.bottomSheet.open(AuthenticationComponent);
   }
 
+  setCurrent(documentId: string) {
+    this.currentDocumentId = documentId;
+
+    console.log(documentId);
+  }
 }

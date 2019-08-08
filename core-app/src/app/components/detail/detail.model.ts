@@ -1,24 +1,14 @@
 
-export class CardActions {
-  btnText: string;
-  btnPostURL: string;
-  routerLink: string;
-}
-
-export class Detail{
-  parentId: number;
-  id: number;
+export class Detail {
+  parentDocumentId: string;  //uuid
+  documentId: string;        //uuid
 
   cardContent: {
     title: string;
     headline: string;
     icon: string;
     tags: string;
-    externalRouterLink: string
+    externalRouterLink: string;
   };
 
-  // TODO: cardActions must be and array!
-  cardActions: CardActions[];
-
-  // TODO: update model field names
 }

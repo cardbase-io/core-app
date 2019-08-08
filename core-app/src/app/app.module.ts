@@ -10,7 +10,6 @@ import { RegisterComponent } from './components/authz/register/register.componen
 import { VerificationComponent } from './components/authz/verification/verification.component';
 import { DetailComponent } from './components/detail/detail.component';
 import { MasterComponent } from './components/master.component';
-import { EligibilityComponent } from './components/authz/eligibility/eligibility.component';
 import { VerifyComponent } from './components/authz/verify/verify.component';
 import { AuthenticationComponent } from './components/authz/authentication.component';
 
@@ -24,7 +23,6 @@ import { FirebaseModule } from './firebase.module';
     VerificationComponent,
     DetailComponent,
     MasterComponent,
-    EligibilityComponent,
     VerifyComponent,
     AuthenticationComponent
   ],
