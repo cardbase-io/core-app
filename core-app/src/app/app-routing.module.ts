@@ -5,7 +5,6 @@ import { DetailComponent } from './components/detail/detail.component';
 import { RegisterComponent } from './components/authz/register/register.component';
 import { VerificationComponent } from './components/authz/verification/verification.component';
 import { MasterComponent } from './components/master.component';
-import { EligibilityComponent } from './components/authz/eligibility/eligibility.component';
 import { VerifyComponent } from './components/authz/verify/verify.component';
 import { AuthenticationComponent } from './components/authz/authentication.component';
 
@@ -17,7 +16,6 @@ const routes: Routes = [
   { path: 'authz/verify', component: VerifyComponent,  data: { title: 'Verify', animation: 'left' } },
   { path: 'authz/verification', component: VerificationComponent,  data: { title: 'Verification', animation: 'left' } },
   { path: 'authz/register', component: RegisterComponent,  data: { title: 'Register', animation: 'left' } },
-  { path: 'eligibility', component: EligibilityComponent,  data: { title: 'Eligibility', animation: 'left' } },
   // { path: '', redirectTo: 'index', pathMatch: 'full' },
   // { path: '**', component: PageNotFoundComponent }
   ];
