@@ -7,9 +7,11 @@
 </mat-toolbar>
 
 
-<mat-card class="master-card mat-elevation-z1" *ngFor="let item of masterCards">
+<mat-card class="master-card mat-elevation-z1"
+          *ngFor="let item of masterCards | async"
+          (click)="setCurrent(item.documentId)" >
   <mat-card-header *ngIf="item.cardHeader.title.length > 0">
-    <mat-card-title>{{ item.cardHeader.title}}</mat-card-title>
+    <mat-card-title>{{ item.cardHeader.title.substr(0, 40)}}</mat-card-title>
   </mat-card-header>
 
   <mat-card-content routerLink="{{ item.cardContent.routerLink }}" routerLinkActive="active">

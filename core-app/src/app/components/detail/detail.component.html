@@ -9,13 +9,17 @@
   </mat-toolbar-row>
 </mat-toolbar>
 
-<mat-card class="detail-card mat-elevation-z1" *ngFor="let item of detailCards">
+<mat-card class="detail-card mat-elevation-z1" *ngFor="let item of detailCards | async">
 
   <mat-card-content routerLink="{{ item.cardContent.externalRouterLink }}" routerLinkActive="active">
-    <mat-card-title class="mat-card-content">{{ item.cardContent.title.substr(0, 40)}}</mat-card-title>
+    <mat-card-title class="mat-card-content">
+      {{ item.cardContent.title }}
+    </mat-card-title>
 
     <mat-card-subtitle class="mat-card-subtitle">
-      <mat-icon class="mat-card-flat" *ngIf="item.cardContent.icon.length > 0">{{ item.cardContent.icon }}</mat-icon>
+      <mat-icon class="mat-card-flat" *ngIf="item.cardContent.icon != ''">
+        {{ item.cardContent.icon }}
+      </mat-icon>
       {{ item.cardContent.tags }}
     </mat-card-subtitle>
   </mat-card-content>

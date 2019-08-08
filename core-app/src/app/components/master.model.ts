@@ -9,7 +9,7 @@ export class location {
 }
 
 export class Master {
-  documentId: number;           //uuid
+  documentId: string;           //uuid
 
   cardHeader: CardHeader;
 
@@ -22,5 +22,6 @@ export class Master {
   };
 
   location?: location;
+  createdAt?: string;
 
 }

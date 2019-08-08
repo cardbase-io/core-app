@@ -3,7 +3,11 @@ import { Master } from './master.model';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { AuthenticationComponent } from './authz/authentication.component';
 import { Router } from '@angular/router';
-import {AngularFireAuth} from '@angular/fire/auth';
+import { AngularFireAuth } from '@angular/fire/auth';
+import {Observable, of} from 'rxjs';
+import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from '@angular/fire/firestore';
+import {switchMap, map} from 'rxjs/operators';
+import {User} from './authz/user.model';
 
 @Component({
   selector: 'app-master',
@@ -12,34 +16,23 @@ import {AngularFireAuth} from '@angular/fire/auth';
 })
 export class MasterComponent implements OnInit, AfterViewInit {
   title = 'Home';
-  masterCards: Master[];
+
+  masterCardsCollection: AngularFirestoreCollection<Master>;
+  masterCards: Observable<Master[]>;
+
+  currentDocumentId: string;
+  snapshot: any;
 
   constructor(private bottomSheet: MatBottomSheet,
               private router: Router,
-              private afAuth: AngularFireAuth) { }
+              private afAuth: AngularFireAuth,
+              private db: AngularFirestore) { }
 
   ngOnInit() {
 
-    this.masterCards = [
-    {
-      documentId: 123,
-      cardHeader: {title: '', avatarURL: ''},
-      cardContent: {title: 'title',
-                    subTitle: 'subtitle',
-                    imageSrcURL: 'https://dummyimage.com/600x400/fefefe/969396.jpg&text=card',
-                    imageAltText: 'hint',
-                    routerLink: '/detail/123'},
-      location: {latitude: 30, longitude: 32}
-    },
-    {
-      documentId: 124,
-      cardHeader: {title: '', avatarURL: ''},
-      cardContent: {title: 'title',
-                    subTitle: 'subtitle',
-                    imageSrcURL: 'https://dummyimage.com/600x400/fefefe/969396.jpg&text=card',
-                    imageAltText: 'hint',
-                    routerLink: '/detail/124'},
-    }];
+    this.masterCardsCollection = this.db.collection('masterCards');
+    this.masterCards = this.masterCardsCollection.valueChanges({idField: 'documentId'});
+
 
   }
 
@@ -64,4 +57,9 @@ export class MasterComponent implements OnInit, AfterViewInit {
       this.bottomSheet.open(AuthenticationComponent);
   }
 
+  setCurrent(documentId: string) {
+    this.currentDocumentId = documentId;
+
+    console.log(documentId);
+  }
 }

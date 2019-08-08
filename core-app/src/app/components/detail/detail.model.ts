@@ -1,7 +1,7 @@
 
 export class Detail {
-  parentDocumentId: number;  //uuid
-  documentId: number;        //uuid
+  parentDocumentId: string;  //uuid
+  documentId: string;        //uuid
 
   cardContent: {
     title: string;
