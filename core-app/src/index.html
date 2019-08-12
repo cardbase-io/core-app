@@ -11,7 +11,18 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+<!--  TODO: use angular app-shell to manage below splash screen. this is also related to site performance-->
+  <app-root>
 
-  <app-root></app-root>
+    <div id="flex-container" style="height:100%; display: flex; flex-flow: column nowrap; align-items: center">
+      <div style="padding-top:100px; flex: 1 0 auto">
+        <img src="assets/cardbase.jpeg" alt="logo">
+      </div>
+      <div style="opacity: 0.3;">
+        <h4 style="font-size: 20px; color: darkslategray">cardbase</h4>
+      </div>
+    </div>
+
+  </app-root>
 </body>
 </html>
