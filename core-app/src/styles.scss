@@ -4,6 +4,7 @@
 
 @include mat-core();
 
+// Define your application's custom palette.
 $parrot-blue: (
   50 : #e2f1ff,
   100 : #b6dbff,
@@ -36,7 +37,6 @@ $parrot-blue: (
     A700 : #000000,
   )
 );
-
 $parrot-orange: (
   50 : #fff8e1,
   100 : #ffeeb3,
@@ -70,19 +70,21 @@ $parrot-orange: (
   )
 );
 
+// Define your application's custom theme.
 $material-app-primary: mat-palette($parrot-blue, 600, 400, 800);
 $material-app-accent:  mat-palette($parrot-orange, 400, 200, 800);
 $material-app-warn:    mat-palette($mat-red);
 
-
 $material-app-theme: mat-light-theme($material-app-primary, $material-app-accent, $material-app-warn);
 
+//Include theme styles for Angular Material components.
 @include angular-material-theme($material-app-theme);
 
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
+//global css operations for angular components. consider performance of inline css !
 .top-menu-spacer { flex: 0.1 1 auto; }
-
 .top-menu-icon { padding: 0 5px; }
+.mat-card .tuneRippleEffect { margin-bottom: 0; }
+.card { margin: 10px 10px 10px 10px; }
+
+//to give a dummy blank for last card item
+.dummy-blank { padding-top: 10px; }

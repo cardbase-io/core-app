@@ -1,17 +1,26 @@
-<mat-toolbar color="primary" #matToolbar>
+<mat-toolbar
+  class="mat-elevation-z2"
+  color="primary" #matToolbar>
   <mat-toolbar-row>
-    <mat-icon class="top-menu-icon" aria-hidden="false" aria-label="Back"
-              routerLink="/">
-      keyboard_arrow_left
-    </mat-icon>
+    <button mat-icon-button aria-label="Back">
+      <mat-icon class="top-menu-icon" aria-hidden="false" aria-label="Back"
+                routerLink="/">
+        keyboard_arrow_left
+      </mat-icon>
+    </button>
     <span class="top-menu-spacer"></span>
     <span>Subtitle</span>
   </mat-toolbar-row>
 </mat-toolbar>
 
-<mat-card class="detail-card mat-elevation-z1" *ngFor="let item of detailCards | async">
+<mat-card matRipple
+          class="card mat-elevation-z2"
+          *ngFor="let item of detailCards | async">
 
-  <mat-card-content routerLink="{{ item.cardContent.externalRouterLink }}" routerLinkActive="active">
+  <mat-card-content
+    class="tuneRippleEffect"
+    routerLink="{{ item.cardContent.externalRouterLink }}" routerLinkActive="active">
+
     <mat-card-title class="mat-card-content">
       {{ item.cardContent.title }}
     </mat-card-title>
@@ -25,3 +34,6 @@
   </mat-card-content>
 
 </mat-card>
+
+<!--blank for the last item for mobile screens-->
+<div class="dummy-blank"></div>
