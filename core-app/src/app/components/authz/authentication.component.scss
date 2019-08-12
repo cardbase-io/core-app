@@ -1,6 +1,9 @@
-.container button,
-.container a {
-  display: grid; vertical-align: middle; horiz-align: center;
+//TODO: reimplement ad make more concise below css w/ flex !
+
+//.container button,
+.container .mat-raised-button {
+  display: grid;
+  vertical-align: middle; horiz-align: center;
   width: 65%;
   margin: 0 auto;
   text-transform: uppercase;

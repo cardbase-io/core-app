@@ -12,8 +12,10 @@ import { DetailComponent } from './components/detail/detail.component';
 import { MasterComponent } from './components/master.component';
 import { VerifyComponent } from './components/authz/verify/verify.component';
 import { AuthenticationComponent } from './components/authz/authentication.component';
+import { PageNotFoundComponent } from './components/404/page-not-found.component';
 
 import { FirebaseModule } from './firebase.module';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { FirebaseModule } from './firebase.module';
     DetailComponent,
     MasterComponent,
     VerifyComponent,
-    AuthenticationComponent
+    AuthenticationComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

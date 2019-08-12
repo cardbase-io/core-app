@@ -5,7 +5,7 @@
 <!--signin related parts-->
 
 <!--  <a mat-raised-button color="primary" (click)="openLink($event)" routerLink="/authz/verify">-->
-    <div id="container"  class="buttons" *ngIf="auth.user$ | async as user; else continueAs">
+    <div id="container" class="buttons" *ngIf="auth.user$ | async as user; else continueAs">
 
       <a mat-raised-button color="primary" (click)="openLink($event)" routerLink="/">
         Continue As {{ user.displayName.split(' ', 1) }}
@@ -34,7 +34,7 @@
       <!--        <span class="firebaseui-idp-text-2">Sign in with phone</span>-->
       <!--      </a>-->
 <!--     TODO: create privacy policy and tos pages, -->
-      <p>By continuing, you agree {{ companyName }}'s privacy policy and terms of service.</p>
+      <p>By continuing, you agree {{ companyName }}'s <a href = "/assets/privacy.html" style="text-decoration: none; text-transform: lowercase;">privacy policy</a> and <a href = "/assets/terms.html" style="text-decoration: none; text-transform: lowercase;">terms of service.</a></p>
 
     </ng-template>
 

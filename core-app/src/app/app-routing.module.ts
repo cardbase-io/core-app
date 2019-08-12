@@ -7,6 +7,7 @@ import { VerificationComponent } from './components/authz/verification/verificat
 import { MasterComponent } from './components/master.component';
 import { VerifyComponent } from './components/authz/verify/verify.component';
 import { AuthenticationComponent } from './components/authz/authentication.component';
+import { PageNotFoundComponent } from './components/404/page-not-found.component';
 
 const routes: Routes = [
   { path: '', component: MasterComponent,  data: { title: 'Master', animation: 'right' } },
@@ -16,8 +17,8 @@ const routes: Routes = [
   { path: 'authz/verify', component: VerifyComponent,  data: { title: 'Verify', animation: 'left' } },
   { path: 'authz/verification', component: VerificationComponent,  data: { title: 'Verification', animation: 'left' } },
   { path: 'authz/register', component: RegisterComponent,  data: { title: 'Register', animation: 'left' } },
-  // { path: '', redirectTo: 'index', pathMatch: 'full' },
-  // { path: '**', component: PageNotFoundComponent }
+  // { path: '**', redirectTo: 'index', pathMatch: 'full' },
+  { path: '**', component: PageNotFoundComponent }
   ];
 
 @NgModule({
