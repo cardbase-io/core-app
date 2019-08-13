@@ -6,30 +6,35 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "headers": [ {
-      "source": "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
-      "headers": [ {
-        "key": "Access-Control-Allow-Origin",
-        "value": "*"
-      } ]
-    }, {
-      "source": "**/*.@(jpg|jpeg|gif|png)",
-      "headers": [ {
-        "key": "Cache-Control",
-        "value": "public, max-age=2419200"
-      } ]
-    }, {
-      "source": "**/*.@(css|js|ico)",
-      "headers": [ {
-        "key": "Cache-Control",
-        "value": "public, max-age=2419200"
-      } ]
-    },{
-      "source": "404.html",
-      "headers": [ {
-        "key": "Cache-Control",
-        "value": "max-age=300"
-      } ]
-    } ]
+    "headers": [
+      {
+        "source": "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
+        "headers": [ {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        } ]
+      },
+      {
+        "source": "**/*.@(jpg|jpeg|gif|png)",
+        "headers": [ {
+          "key": "Cache-Control",
+          "value": "public, max-age=2419200"
+        } ]
+      },
+      {
+        "source": "**/*.@(css|js|ico)",
+        "headers": [ {
+          "key": "Cache-Control",
+          "value": "public, max-age=2419200"
+        } ]
+      },
+      {
+        "source": "404.html",
+        "headers": [ {
+          "key": "Cache-Control",
+          "value": "max-age=300"
+        } ]
+      }
+    ]
   }
 }
