@@ -15,6 +15,8 @@ import { AuthenticationComponent } from './components/authz/authentication.compo
 import { PageNotFoundComponent } from './components/404/page-not-found.component';
 
 import { FirebaseModule } from './firebase.module';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -34,7 +36,8 @@ import { FirebaseModule } from './firebase.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FirebaseModule
+    FirebaseModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
