@@ -24,7 +24,7 @@ export class AuthenticationGuard implements CanActivate {
       take(1),
       map(user => !!user),
       tap(loggedIn => {
-        !loggedIn ? console.log('not authorized') : this.router.navigate(['/']);
+        !loggedIn ? this.router.navigate(['/']) : console.log('authorized');
       })
     );
 
