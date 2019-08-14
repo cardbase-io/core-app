@@ -1,6 +1,6 @@
 {
-  "name": "core-app",
-  "short_name": "core-app",
+  "name": "cardbase",
+  "short_name": "cardbase",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
