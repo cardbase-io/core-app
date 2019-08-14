@@ -18,14 +18,14 @@
         "source": "**/*.@(jpg|jpeg|gif|png)",
         "headers": [ {
           "key": "Cache-Control",
-          "value": "public, max-age=2419200"
+          "value": "public, max-age=864000"
         } ]
       },
       {
         "source": "**/*.@(css|js|ico)",
         "headers": [ {
           "key": "Cache-Control",
-          "value": "public, max-age=2419200"
+          "value": "public, max-age=864000"
         } ]
       },
       {

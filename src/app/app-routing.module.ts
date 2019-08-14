@@ -17,8 +17,8 @@ const routes: Routes = [
   { path: 'authz/verify', component: VerifyComponent,  data: { title: 'Verify', animation: 'left' } },
   { path: 'authz/verification', component: VerificationComponent,  data: { title: 'Verification', animation: 'left' } },
   { path: 'authz/register', component: RegisterComponent,  data: { title: 'Register', animation: 'left' } },
-  // { path: '**', redirectTo: 'index', pathMatch: 'full' },
-  { path: '**', component: PageNotFoundComponent }
+  { path: '404', component: PageNotFoundComponent },
+  { path: '**', redirectTo: '404'},
   ];
 
 @NgModule({
