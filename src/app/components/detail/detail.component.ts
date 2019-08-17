@@ -3,7 +3,6 @@ import { Detail } from './detail.model';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
-import {MasterComponent} from '../master.component';
 
 @Component({
   selector: 'app-detail',
@@ -28,8 +27,6 @@ export class DetailComponent implements OnInit {
       this.parentDocumentId = res.documentId;
     });
 
-    // TODO: init dummy data
-    // this.parent.masterCards.subscribe();
     this.detailCardsCollection = this.db.collection(`masterCards/${this.parentDocumentId}/detailCards`);
     this.detailCards = this.detailCardsCollection.valueChanges();
   }
