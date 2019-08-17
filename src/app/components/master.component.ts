@@ -8,6 +8,7 @@ import {Observable, of} from 'rxjs';
 import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from '@angular/fire/firestore';
 import {switchMap, map} from 'rxjs/operators';
 import {User} from './authz/user.model';
+import { CustomizationService } from '../customization.service';
 
 @Component({
   selector: 'app-master',
@@ -15,7 +16,6 @@ import {User} from './authz/user.model';
   styleUrls: ['./master.component.scss']
 })
 export class MasterComponent implements OnInit, AfterViewInit {
-  title = 'Home';
 
   masterCardsCollection: AngularFirestoreCollection<Master>;
   masterCards: Observable<Master[]>;
@@ -23,7 +23,8 @@ export class MasterComponent implements OnInit, AfterViewInit {
   currentDocumentId: string;
   snapshot: any;
 
-  constructor(private bottomSheet: MatBottomSheet,
+  constructor(public idea: CustomizationService,
+              private bottomSheet: MatBottomSheet,
               private router: Router,
               private afAuth: AngularFireAuth,
               private db: AngularFirestore) { }

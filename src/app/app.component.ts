@@ -12,7 +12,6 @@ import { RouterOutlet } from '@angular/router';
   ]
 })
 export class AppComponent {
-  title = 'carbase.io';
 
   prepareRoute(outlet: RouterOutlet) {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];

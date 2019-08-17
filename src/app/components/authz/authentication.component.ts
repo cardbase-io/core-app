@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatBottomSheetRef } from '@angular/material';
 import { MasterComponent } from '../master.component';
 import { AuthenticationService } from './authentication.service';
+import {CustomizationService} from '../../customization.service';
 
 @Component({
   selector: 'app-authentication',
@@ -10,9 +11,8 @@ import { AuthenticationService } from './authentication.service';
 })
 export class AuthenticationComponent implements OnInit {
 
-  companyName = 'cardbase.io';
-
-  constructor(private bottomSheetRef: MatBottomSheetRef<MasterComponent>,
+  constructor(public idea: CustomizationService,
+              private bottomSheetRef: MatBottomSheetRef<MasterComponent>,
               public auth: AuthenticationService) { }
 
   ngOnInit() {
