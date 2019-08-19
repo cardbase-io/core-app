@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "cardbaseio"
+    "development": "core-app-development-f2b5b",
+    "production": "core-app-production-707cb",
+    "release": "core-app-release-25f94"
   }
 }
