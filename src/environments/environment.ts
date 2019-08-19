@@ -6,13 +6,13 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyAuykaODPgLjOR3ccvGWXSyzMqpXSJqkB4",
-    authDomain: "cardbaseio.firebaseapp.com",
-    databaseURL: "https://cardbaseio.firebaseio.com",
-    projectId: "cardbaseio",
+    apiKey: "AIzaSyDsn7eVRN7aGi5Cugr4vyWjIJXmP4NV-Os",
+    authDomain: "core-app-development-f2b5b.firebaseapp.com",
+    databaseURL: "https://core-app-development-f2b5b.firebaseio.com",
+    projectId: "core-app-development-f2b5b",
     storageBucket: "",
-    messagingSenderId: "447150572756",
-    appId: "1:447150572756:web:07464b54135aefe0"
+    messagingSenderId: "886839553222",
+    appId: "1:886839553222:web:a86ce493f8a21443"
   }
 };
 
