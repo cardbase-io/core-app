@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-ng build --configuration="development" && firebase deploy --project development
+ng build  && firebase deploy --project development --only hosting:core-app
+
+
