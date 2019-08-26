@@ -1,7 +1,30 @@
 {
   "projects": {
-    "development": "core-app-development-f2b5b",
-    "production": "core-app-production-707cb",
-    "release": "core-app-release-25f94"
+    "development": "development-3f127",
+    "production": "production-34b0f",
+    "release": "release-91f9d"
+  },
+  "targets": {
+    "development-3f127": {
+      "hosting": {
+        "core-app": [
+          "core-app-3f127"
+        ]
+      }
+    },
+    "release-91f9d": {
+      "hosting": {
+        "core-app": [
+          "core-app-91f9d"
+        ]
+      }
+    },
+    "production-34b0f": {
+      "hosting": {
+        "core-app": [
+          "core-app-34b0f"
+        ]
+      }
+    }
   }
 }
