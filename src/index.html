@@ -1,26 +1,48 @@
 <!doctype html>
 <html lang="en" style="height: 100%">
 <head>
-  <meta charset="utf-8">
-<!--  TODO: Change below as Cardbase.io - branding message or positioning-->
-  <title>Cardbase.io - </title>
+  <meta charset="UTF-8">
   <base href="/">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<!--  <link rel="dns-prefetch" href="https://unpkg.com">-->
+
+  <title>Cardbase.io - Application Boilerplate for Platform Based ideas with Angular, Material and PWA</title>
+
+  <!--  TODO: Update w/ a valid description-->
+  <meta name="description" content="Put your description here.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0358ff">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<!--  TODO: Update w/ a valid description-->
-  <meta name="Description" content="Put your description here.">
-<!--  <meta name="Description" content="Author: A.N. Author,-->
-<!--    Illustrator: P. Picture, Category: Books, Price: $17.99,-->
-<!--    Length: 784 pages">-->
+  <!-- pwa capabilities : only for entry page-->
+  <link rel="manifest" href="manifest.webmanifest">
 
+  <!-- icons -->
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="assets/icons/icon-192x192.png">
 
+  <!-- ie tiling/pinnig -->
+  <meta name="application-name" content="app-name">
+  <meta name="msapplication-tooltip" content="A description of what this site does.">
+  <meta name="msapplication-navbutton-color" content="#ff0000">
+  <meta name="msapplication-window" content="width=768;height=1024">
+
+  <!-- apple add to homescreen -->
+  <meta name="apple-mobile-web-app-title" content="app-name">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- chrome install app -->
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- startup load on safari. for chrome automatically generated from .webmanifest -->
+  <link rel="apple-touch-startup-image"
+        media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)"
+        href="assets/icons/icon-192x192.png">
+
+  <!-- Required styles for MDC Web -->
   <link disabled href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;display=swap" rel="stylesheet" media="screen">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons&amp;display=swap" rel="stylesheet" media="screen">
 
-  <link rel="manifest" href="manifest.webmanifest">
   <meta name="theme-color" content="#1976d2">
 </head>
 <body style="margin: 0; height: 100%; font-family: Roboto, 'Helvetica Neue', sans-serif">
