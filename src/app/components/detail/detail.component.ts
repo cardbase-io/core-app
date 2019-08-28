@@ -19,7 +19,7 @@ export class DetailComponent implements OnInit {
   constructor(private route: ActivatedRoute,
               private db: AngularFirestore) {
 
-    //get parentId param from url
+    // get parentId param from url
     this.route.params.subscribe(res => {
       console.log(res);
       console.log(`parentDocumentId: ${res.documentId}`);

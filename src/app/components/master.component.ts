@@ -4,10 +4,8 @@ import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { AuthenticationComponent } from './authz/authentication.component';
 import { Router } from '@angular/router';
 import { AngularFireAuth } from '@angular/fire/auth';
-import {Observable, of} from 'rxjs';
-import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from '@angular/fire/firestore';
-import {switchMap, map} from 'rxjs/operators';
-import {User} from './authz/user.model';
+import { Observable } from 'rxjs';
+import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
 import { CustomizationService } from '../customization.service';
 
 @Component({
@@ -21,7 +19,6 @@ export class MasterComponent implements OnInit, AfterViewInit {
   masterCards: Observable<Master[]>;
 
   currentDocumentId: string;
-  snapshot: any;
 
   constructor(public idea: CustomizationService,
               private bottomSheet: MatBottomSheet,
@@ -34,7 +31,6 @@ export class MasterComponent implements OnInit, AfterViewInit {
     this.masterCardsCollection = this.db.collection('masterCards');
     this.masterCards = this.masterCardsCollection.valueChanges({idField: 'documentId'});
 
-
   }
 
   /**
@@ -43,8 +39,9 @@ export class MasterComponent implements OnInit, AfterViewInit {
    */
   ngAfterViewInit() {
 
-    if (!this.afAuth.auth.currentUser)
+    if (!this.afAuth.auth.currentUser) {
       this.openBottomSheet();
+    }
   }
 
   /**

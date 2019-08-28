@@ -23,7 +23,7 @@ export class AuthenticationComponent implements OnInit {
 
   /**
    * below is called from html part, and delivers bottom-sheet handler
-   * @param event
+   * @param: MouseEvent to handle bottom-sheet handler
    */
   openLink(event: MouseEvent): void {
 

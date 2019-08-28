@@ -37,6 +37,7 @@ $primary: (
     A700 : #000000,
   )
 );
+
 $accent: (
   50 : #fff8e1,
   100 : #ffeeb3,
@@ -86,5 +87,3 @@ $material-app-theme: mat-light-theme($material-app-primary, $material-app-accent
 .mat-card .tuneRippleEffect { margin-bottom: 0; }
 .card { margin: 10px 10px 10px 10px; }
 
-//to give a dummy blank for last card item
-.dummy-blank { padding-top: 10px; }

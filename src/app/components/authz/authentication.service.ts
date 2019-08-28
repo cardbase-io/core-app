@@ -7,7 +7,7 @@ import { AngularFireAuth } from '@angular/fire/auth';
 import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/firestore';
 
 import { Observable, of } from 'rxjs';
-import {map, switchMap} from 'rxjs/operators';
+import { switchMap} from 'rxjs/operators';
 import * as firebase from 'firebase';
 import { User } from './user.model';
 
@@ -16,21 +16,21 @@ import { User } from './user.model';
 })
 export class AuthenticationService {
 
-  //User's user document in firestore! And that will be shared across the app.
+  // User's user document in firestore! And that will be shared across the app.
   user$: Observable<any>;
 
   constructor(private afAuth: AngularFireAuth, private afs: AngularFirestore, private router: Router) {
 
 
-    //user-in-firebase-Authentication w/ user-in-firestore record
+    // user-in-firebase-Authentication w/ user-in-firestore record
     this.user$ = this.afAuth.authState.pipe(
       switchMap(user => {
         if (user) {
 
           return this.afs.doc<User>(`users/${user.uid}`).valueChanges();
-        }
-        else
+        } else {
           return of(null);
+        }
       })
     );
 
@@ -38,11 +38,11 @@ export class AuthenticationService {
 
   async googleSignin() {
     const provider = new auth.GoogleAuthProvider();
-    //TODO: if we can get phoneNumber from google, (after user-consent), then registration process becomes faster!
-    //provider.addScope('prompt');
-    provider.setCustomParameters({'prompt' : 'select_account'});
+    // TODO: if we can get phoneNumber from google, (after user-consent), then registration process becomes faster!
+    // provider.addScope('prompt');
+    provider.setCustomParameters({prompt : 'select_account'});
 
-    //const credential = await this.afAuth.auth.signInWithPopup(provider);
+    // const credential = await this.afAuth.auth.signInWithPopup(provider);
     await this.afAuth.auth.signInWithPopup(provider).then(result => {
       console.log(result.user.toJSON());
 
@@ -62,7 +62,7 @@ export class AuthenticationService {
 
     // Sign in with popup:
     this.afAuth.auth.signInWithPopup(provider)
-      .then(function(result) {
+      .then((result) => {
               // The firebase.User instance:
               const user = result.user;
               // The Facebook firebase.auth.AuthCredential containing the Facebook
@@ -81,7 +81,7 @@ export class AuthenticationService {
       // you can fetch the providers using this:
       if (error.code === 'auth/account-exists-with-different-credential') {
         this.afAuth.auth.fetchSignInMethodsForEmail(email)
-          .then(function(providers) {
+          .then((providers) => {
           // The returned 'providers' is a list of the available providers
           // linked to the email address. Please refer to the guide for a more
           // complete explanation on how to recover from this error.
@@ -97,12 +97,12 @@ export class AuthenticationService {
     //
     // console.log('credential' + credential);
 
-    //routerLink="/authz/verify"
+    // routerLink="/authz/verify"
   }
 
   async signOut() {
      await this.afAuth.auth.signOut().then(() => {
-       //successful signOut
+       // successful signOut
        console.log('signOut successful');
 
      }).catch(error => {
@@ -114,19 +114,19 @@ export class AuthenticationService {
   /**
    * Update or create User data in firestore
    *
-   * @param uid
-   * @param displayName
-   * @param phoneNumber
-   * @param email
+   * @param: String uid
+   * @param: String displayName
+   * @param: String phoneNumber
+   * @param: String email
    */
-  private updateUserData ({ uid, displayName, phoneNumber, email } : User) {
+  private updateUserData({ uid, displayName, phoneNumber, email }: User) {
     const userRef: AngularFirestoreDocument<User> = this.afs.doc(`users/${uid}`);
 
     // TODO: user.model should be updated
     //  diff between google's data model and user.model regarding to custom fields
     const data = { uid, displayName, phoneNumber, email };
 
-    //creates or updates if available w/ merge:true
+    // creates or updates if available w/ merge:true
     return userRef.set(data, {merge: true});
   }
 
