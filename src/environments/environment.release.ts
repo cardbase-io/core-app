@@ -1,5 +1,8 @@
 export const environment = {
   production: false,
+  www: {
+    wwwURL: 'https://release.cardbase.io'
+  },
   firebase: {
     apiKey: "AIzaSyDMCIAVLIyOAUC9oGgOm2XcCpPyZ1vU_6A",
     authDomain: "release-91f9d.firebaseapp.com",

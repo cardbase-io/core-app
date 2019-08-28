@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { MatBottomSheetRef } from '@angular/material';
 import { MasterComponent } from '../master.component';
 import { AuthenticationService } from './authentication.service';
-import {CustomizationService} from '../../customization.service';
+import { CustomizationService } from '../../customization.service';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-authentication',
@@ -10,6 +11,8 @@ import {CustomizationService} from '../../customization.service';
   styleUrls: ['./authentication.component.scss']
 })
 export class AuthenticationComponent implements OnInit {
+
+  environment = environment.www;
 
   constructor(public idea: CustomizationService,
               private bottomSheetRef: MatBottomSheetRef<MasterComponent>,
