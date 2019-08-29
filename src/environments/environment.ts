@@ -5,14 +5,17 @@
 
 export const environment = {
   production: false,
+  www: {
+    wwwURL: 'https://development.cardbase.io'
+  },
   firebase: {
-    apiKey: "AIzaSyBpjKo5j5_o6Rc3VEEDbvCaRTdIFl5qXLk",
-    authDomain: "development-3f127.firebaseapp.com",
-    databaseURL: "https://development-3f127.firebaseio.com",
-    projectId: "development-3f127",
-    storageBucket: "development-3f127.appspot.com",
-    messagingSenderId: "732909393301",
-    appId: "1:732909393301:web:3129c2f724a1e754"
+    apiKey: 'AIzaSyBpjKo5j5_o6Rc3VEEDbvCaRTdIFl5qXLk',
+    authDomain: 'development-3f127.firebaseapp.com',
+    databaseURL: 'https://development-3f127.firebaseio.com',
+    projectId: 'development-3f127',
+    storageBucket: 'development-3f127.appspot.com',
+    messagingSenderId: '732909393301',
+    appId: '1:732909393301:web:3129c2f724a1e754'
   }
 };
 

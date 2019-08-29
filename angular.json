@@ -21,9 +21,11 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
+              "src/apple-touch-icon.png",
               "src/assets",
               "src/404.html",
-              "src/manifest.webmanifest"
+              "src/manifest.webmanifest",
+              "src/robots.txt"
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
@@ -138,8 +140,11 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
+              "src/apple-touch-icon.png",
               "src/assets",
-              "src/manifest.webmanifest"
+              "src/404.html",
+              "src/manifest.webmanifest",
+              "src/robots.txt"
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",

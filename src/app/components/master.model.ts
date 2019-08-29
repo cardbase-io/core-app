@@ -3,13 +3,13 @@ export class CardHeader {
   avatarURL: string;
 }
 
-export class location {
+export class Location {
   latitude: number;
   longitude: number;
 }
 
 export class Master {
-  documentId: string;           //uuid
+  documentId: string;           // uuid
 
   cardHeader: CardHeader;
 
@@ -21,7 +21,7 @@ export class Master {
     routerLink: string
   };
 
-  location?: location;
+  location?: Location;
   createdAt?: string;
 
 }

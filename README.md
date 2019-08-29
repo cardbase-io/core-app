@@ -17,7 +17,7 @@ Pure **Angular Material PWA Boilerplate for Firebase** w/
 
 In any idea, it is **%90 likelihood** to be **a platform idea** where buyers and sellers gathers in a platform. 
 And, whether a small idea or a big one, 
- - some parts are mutual and takes a lot of time which is called **scaffolfing**. 
+ - some parts are mutual and takes a lot of time which is called **scaffolding**. 
  - on the other hand, 
      - raising of frameworks like angular, flutter or react will boost your product development time spent 
      - raising of sketch decrease prototyping but not as expected. If you add Google's **material design system** to sketch, then you get boosted more (**a working prototype**). 
@@ -141,9 +141,9 @@ General steps, after fork from cardbase-io, is below. This is prepared just to g
        - delete default project or you gonna need to increase max. project count per billing account.
    - create a firebase account
    - create projects on firebase w/ ga activated. Read **The High Level Architecture** above. Create those firebase projects. (firebase cli is not capable to handle that automation yet. So it is manual)
-   This part is critical. All hosting in a firebase project, will flow  through ga account->property=firebase-project->view as all web site data 
+   This part is critical. All hosting in a firebase project, will flow through ga account->property=firebase-project->view as all web site data 
        - add applications (core-app, www, merchant-app etc. those will use same user auth.) to related firebase project.
-          - Define domain strategy. ( It is better give meaningful short domain names to static (www) part. Then user can jump to related parts of application. 
+          - Define domain strategy. (It is better give meaningful short domain names to static (www) part. Then user can jump to related parts of application. 
              - add domain A records to domain provider and configure on firebase hosting such as (development.domainName, release., demo., www. )
        - open ga console. (firebase created automatically)
           - update settings + create dpa administration info. define primary contact.
@@ -151,38 +151,20 @@ General steps, after fork from cardbase-io, is below. This is prepared just to g
           - adding ga w/ tag manager later!
        - on firebase console, update project settings 
           - support mail, public facing name (as domainName)            
-       - add signin method (esp. google signin). This will create contest on gcp side!     
-   - for google auth. define contest info. later to get such as phone numbers, you need extra verification below screens
-       - logo (only via gcp console). search `consent` on gcp console. it is under api&services/credentials then click `oauth consent screen` link !
-       - support mail (via firebase console & gcp console)
-       - domains (via firebase console & gcp console)
-       - privacy and policy links (only via gcp console
-       - scope (only via gcp console for extra scopes. via firebase console for default scopes such as email, name, photo etc.)
+       - add signin method (esp. google signin). This will create contest on gcp side!
+           - on firebase auth. ui, add additional **authorized domains** to whitelist other domains. Cause from www to core-app, 
+           there may be many domains.
+           - for google auth. define contest info. later to get such as phone numbers, you need extra verification below screens
+               - logo (only via gcp console). search `consent` on gcp console. it is under api&services/credentials then click `oauth consent screen` link !
+               - support mail (via firebase console & gcp console)
+               - domains (via firebase console & gcp console)
+               - privacy and policy links (only via gcp console
+               - scope (only via gcp console for extra scopes. via firebase console for default scopes such as email, name, photo etc.)
    - Prepare CLIs for gcp and firebase. check below **About CLIs**
    - Initialize default db: create firestore db on **firebase console** or **gcp console**. Then import data model w/ samples. 
-       This sampleData contains basic initial data model of cardbaseio. It is good to use start a initial dummy firestore db w/ data model!
+   This sampleData contains basic initial data model of cardbaseio. It is good to use as initial dummy firestore db w/ data model! 
+   To do that you need to fork from `cardbaseio/datamodel`. For [more detail](https://github.com/cardbase-io/datamodel).
       
-       ```    
-       while inside datamodel/ folder!
-           
-       - export to gcp storage from firestore w/ `gcloud beta firestore export gs://firestore-backup-cardbaseio/dataModel`
-       - download to local from gcp storage w/ `gsutil cp -r gs://firestore-backup-cardbaseio/dataModel sampleData`
-       
-       above 2 steps is not necessary. cause already done. and this folder always contain latest data model. 
-       importing to **another firestore db** in **another gcp account**, that's what we need.
-       
-       - switch to new gcp account w/ 
-           - `gcloud auth list` to see your account, if preconfigured before. Otherwise `gcloud auth login` w/ google account.
-           -  If you have already configured, use `gcloud config set account ...` .
-       - upload from local to gcp bucket
-           - create a bucket in your gcp account via gcp console ui. _Create a new bucket w/ different name_ :)
-           - `gsutil cp -r  datamodel/dataModel gs://cardbaseio-initial/`
-       - create firestore from firebase ui or gcp console (bans write access for unauth. users default).
-           - import data from gcp storage to firestore w/
-               - use gshell or use `gcloud config set project [PROJECT_ID]` then run commands below 
-               - `gcloud beta firestore import gs://cardbaseio-initial/2019-08-19T07:47:02_86574/`
-           - this step will be done for all firebase projects (i.e. dev, test, prod, demo, release) !
-       ```
 4. Create a `doCustomize` branch, and start customizations below for your idea.
 
 ## How to customize
@@ -201,22 +183,24 @@ Most of the files, as a rule of thumb,
     4. in `styles.scss`, change $primary and $accent colors w/ your colors. 
 - core-app/src/environments 
     1. (_This part is critical for firebase deployments. So it should be handled by ci/cd stack !_ )
-    2. update `environment.ts` , ``environment.release.ts`` and `environment.prod.ts` w/ related firebase account details.
+    2. update `environment.ts` , `environment.release.ts` and `environment.prod.ts` w/ related firebase account details.
     3. define new environment files regarding branch strategy such as (environment_demo.ts, environment_release.ts etc..) for firebase db side. and configure `angular.json`
 - core-app/src/assets
     1. under `/icons`, put your logo's images
 - core-app/src/app
     1. all **customization related data** is in `customization.service.ts`. And it is injected into components. So change everything inside this file, to customize.
     2. 
-    
-## How to deploy
 
-easy.
+## How to Run
 
-for production, under core-app, run `./deploy-to-production.sh `. or other related scripts.
-this scripts, runs proper build command to change related environment.ts. then deploys to related project on firebase.
+- for development only and serve from local run `npm run start`
+- for production, use `./deploy-to-` scripts which will create `dist/` folder and deploys to related firebase project
 
 later ci/cd stack will handle those scripts!
+
+## About Fork strategy
+
+Once you forked, do your customizations and _always get changes_ from [upstream](https://github.com/cardbase-io/core-app) periodically.
 
 ### About CLIs 
 

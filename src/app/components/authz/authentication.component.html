@@ -1,4 +1,4 @@
-<!--handle login or signin login and render page according to that !-->
+<!--handle login or signin to render page according to that !-->
 
 <div class="container">
 
@@ -33,8 +33,9 @@
       <!--        <mat-icon>phone</mat-icon>-->
       <!--        <span class="firebaseui-idp-text-2">Sign in with phone</span>-->
       <!--      </a>-->
-<!--     TODO: create privacy policy and tos pages, -->
-      <p>By continuing, you agree {{ this.idea.productName }}'s <a href = "/assets/privacy.html" style="text-decoration: none; text-transform: lowercase;">privacy policy</a> and <a href = "/assets/terms.html" style="text-decoration: none; text-transform: lowercase;">terms of service.</a></p>
+      <p>By continuing, you agree {{ this.idea.productName }}'s
+        <a href = "{{ this.environment.wwwURL }}/assets/privacy.html" style="text-decoration: none; text-transform: lowercase;">privacy policy</a> and
+        <a href = "{{ this.environment.wwwURL }}/assets/terms.html" style="text-decoration: none; text-transform: lowercase;">terms of service.</a></p>
 
     </ng-template>
 
