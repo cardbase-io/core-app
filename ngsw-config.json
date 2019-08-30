@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/service-worker/config/schema.json",
-  "index": "/index.html",
+  "index": "/index.html?utm_source=addToHomeScreen",
   "assetGroups": [
     {
       "name": "app",
@@ -8,7 +8,9 @@
       "resources": {
         "files": [
           "/favicon.ico",
+          "/*.png",
           "/index.html",
+          "/404.html",
           "/*.css",
           "/*.js"
         ]
