@@ -1,12 +1,14 @@
 // Import global Material Theming variables
 @import "material.theme";
 
-
-
-
 //global css operations for angular components. consider performance of inline css !
 .top-menu-spacer { flex: 0.1 1 auto; }
 .top-menu-icon { padding: 0 5px; }
 .mat-card .tuneRippleEffect { margin-bottom: 0; }
-.card { margin: 10px 10px 10px 10px; }
+.card { margin: 10px 15px 15px 15px; }
+.mat-card-title {
+  font-size: 16px;
+}
+
+
 

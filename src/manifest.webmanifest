@@ -1,7 +1,7 @@
 {
   "name": "cardbase",
   "short_name": "cardbase",
-  "theme_color": "#1976d2",
+  "theme_color": "#fff",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "/",

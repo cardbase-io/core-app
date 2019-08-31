@@ -1,5 +1,6 @@
 <mat-toolbar
-  class="mat-elevation-z2"
+  style="margin: 8px 15px 10px 15px; width: auto; border-radius: 0.5em; background: #309aff; color: rgba(00,00,00,0.55)"
+  class="mat-elevation-z3"
   color="primary" #matToolbar>
   <mat-toolbar-row>
     <button mat-icon-button aria-label="Menu">
@@ -12,7 +13,7 @@
 
 <!--TODO: inject semantic web tags such as role="section" or role="region" aria-label="master card definition."-->
 <mat-card matRipple
-          class="card mat-elevation-z2"
+          class="card mat-elevation-z1"
           *ngFor="let item of masterCards | async"
           (click)="setCurrent(item.documentId)" >
 
