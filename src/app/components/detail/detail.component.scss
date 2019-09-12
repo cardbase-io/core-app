@@ -1,0 +1,20 @@
+.tuneIconSubtitle {
+    display: flex;
+    align-items: center
+}
+  
+.card { margin: 0 0 -8px 0}
+  
+.filterButtons {
+    margin: 0px 0 20px 10px;
+  
+    display: flex;
+    button {
+      margin-right: 10px;
+      width: 52px;
+      height: 52px;
+    }
+  
+    .md-18 { font-size: 24px; }
+}
+  

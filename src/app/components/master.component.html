@@ -1,5 +1,10 @@
 <mat-toolbar
-  style="margin: 8px 15px 10px 15px; width: auto; border-radius: 0.5em; background: #309aff; color: rgba(00,00,00,0.55)"
+  style="margin: 8px 15px 40px 15px;
+         min-height: 45px; max-height: 30px;
+         width: auto;
+         border-radius: 0.5em;
+         background: white;
+         color: rgba(255,255,255,0.85)"
   class="mat-elevation-z3"
   color="primary" #matToolbar>
   <mat-toolbar-row>
@@ -11,9 +16,15 @@
   </mat-toolbar-row>
 </mat-toolbar>
 
+<h2 style="margin: -32px 0 14px 10px;
+    padding: 10px;
+    font-size: small;
+    font-weight: 400;
+    color: rgba(0,0,0,0.7);">ALL {{ this.idea.masterTitle.toUpperCase() }}</h2>
+
 <!--TODO: inject semantic web tags such as role="section" or role="region" aria-label="master card definition."-->
 <mat-card matRipple
-          class="card mat-elevation-z1"
+          class="card mat-elevation-z0"
           *ngFor="let item of masterCards | async"
           (click)="setCurrent(item.documentId)" >
 
@@ -27,8 +38,12 @@
 
     <img mat-card-image src="{{ item.cardContent.imageSrcURL}}" alt="{{ item.cardContent.imageAltText}}">
 
-    <mat-card-title>{{ item.cardContent.title}}</mat-card-title>
-    <mat-card-subtitle>{{ item.cardContent.subTitle}}</mat-card-subtitle>
+    <div style="background-color: #f7f7f7;
+                margin: -22px;
+                padding: 25px">
+      <mat-card-title>{{ item.cardContent.title}}</mat-card-title>
+      <mat-card-subtitle>{{ item.cardContent.subTitle}}</mat-card-subtitle>
+    </div>
   </mat-card-content>
 </mat-card>
 

@@ -1,17 +1,16 @@
-export class CardHeader {
-  title: string;
-  avatarURL: string;
-}
-
 export class Location {
   latitude: number;
   longitude: number;
 }
 
 export class Master {
+  sourceDocumentId: string;     // uuid
   documentId: string;           // uuid
 
-  cardHeader: CardHeader;
+  cardHeader: {
+    title: string;
+    avatarURL: string;
+  };
 
   cardContent: {
     title: string;
@@ -21,7 +20,9 @@ export class Master {
     routerLink: string
   };
 
-  location?: Location;
-  createdAt?: string;
+  filters: {
+    default?: Location; 
+    locationName?: string;      // subTitle
+  }
 
 }

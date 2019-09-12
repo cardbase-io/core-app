@@ -9,7 +9,8 @@
   <title>Cardbase.io - Application Boilerplate for Platform Based ideas with Angular, Material and PWA</title>
 
   <!--  TODO: Update w/ a valid description-->
-  <meta name="description" content="Put your description here.">
+  <meta name="description" content="Boost your platform based ideas with Angular PWA ready boilerplate">
+  <meta name="keywords" content="boilerplate, platform" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -17,27 +18,28 @@
   <link rel="manifest" href="manifest.webmanifest">
 
   <!-- icons -->
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!--    get a transparent logo: https://onlinepngtools.com/create-transparent-png   -->
+  <!--    generate all icons: https://realfavicongenerator.net/   -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#8e24aa">
 
   <!-- ie tiling/pinnig -->
-  <meta name="application-name" content="app-name">
-  <meta name="msapplication-tooltip" content="A description of what this site does.">
+  <meta name="application-name" content="cardbase">
+  <meta name="msapplication-tooltip" content="Boost your platform based ideas">
   <meta name="msapplication-navbutton-color" content="#ff0000">
   <meta name="msapplication-window" content="width=768;height=1024">
+  <meta name="msapplication-TileColor" content="#ffffff">
 
   <!-- apple add to homescreen -->
-  <meta name="apple-mobile-web-app-title" content="app-name">
+  <meta name="apple-mobile-web-app-title" content="cardbase">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">  <!-- black-translucent or black -->
 
   <!-- chrome install app -->
   <meta name="mobile-web-app-capable" content="yes">
-
-  <!-- startup load on safari. for chrome automatically generated from .webmanifest -->
-  <link rel="apple-touch-startup-image"
-        media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)"
-        href="assets/icons/icon-192x192.png">
 
   <!-- startup load on safari. for chrome automatically generated from .webmanifest -->
   <!-- use https://appsco.pe/developer/splash-screens splash screen generator -->
@@ -59,16 +61,16 @@
   <!-- Chrome, Firefox OS and Opera -->
   <meta name="theme-color" content="#ffffff">
 </head>
-<body style="margin: 0; height: 100%; font-family: Roboto, 'Helvetica Neue', sans-serif">
+<body style="margin: 0; height: 100%; font-family: Roboto, sans-serif">
 <!--  TODO: use angular app-shell to manage below splash screen. this is also related to site performance-->
   <app-root>
 
     <div id="flex-container" style="height:100%; display: flex; flex-flow: column nowrap; align-items: center">
       <div style="padding-top:100px; flex: 1 0 auto">
-        <img src="assets/icons/icon-128x128.png" alt="Logo">
+        <img src="assets/icons/logo-transparent.png" height="144px" alt="logo">
       </div>
       <div style="margin-bottom: 10px; opacity: 0.3">
-        <h4 style="font-size: 20px; color: darkslategray">cardbaseio</h4>
+        <h4 style="font-size: 20px; color: darkslategray">cardbase.io</h4>
       </div>
     </div>
 

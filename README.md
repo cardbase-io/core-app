@@ -1,5 +1,12 @@
 # core-app
 
+**Cardbase** is the platform to **boost platform based ideas**. It has
+
+- **www** for static pages and landing pages for critical SEO parts
+- **core-app** for master-detail pattern to show data as siblings.
+- and additional extended-apps such as
+    - ..
+ 
 Pure **Angular Material PWA Boilerplate for Firebase** w/ 
 - [x] angular application w/ scss, routing, 
 - [x] basic animations
@@ -175,21 +182,23 @@ Most of the files, as a rule of thumb,
 
 - core-app/    
     1. change `.firebaserc` file w/ your productName.
-    2. add lines under core-app section in `README.md` file.
+    2. add lines under _core-app_ section in `README.md` file.
 - core-app/src
     1. change favicon.ico w/ your icon
     2. for `404.html` and `index.html`, change mata tags, title. and productName manually
     3. in `manifest.webmanifest` file, change name/short_name w/ your productName
-    4. in `styles.scss`, change $primary and $accent colors w/ your colors. 
+    4. in `material.theme.scss`, change $primary and $accent colors w/ your colors. 
 - core-app/src/environments 
     1. (_This part is critical for firebase deployments. So it should be handled by ci/cd stack !_ )
     2. update `environment.ts` , `environment.release.ts` and `environment.prod.ts` w/ related firebase account details.
-    3. define new environment files regarding branch strategy such as (environment_demo.ts, environment_release.ts etc..) for firebase db side. and configure `angular.json`
+    3. update wwwURL
+    4. define new environment files regarding branch strategy such as (environment_demo.ts, environment_release.ts etc..) for firebase db side. and configure `angular.json`
 - core-app/src/assets
     1. under `/icons`, put your logo's images
+    2. under `/icons`, put ms tiles images
 - core-app/src/app
-    1. all **customization related data** is in `customization.service.ts`. And it is injected into components. So change everything inside this file, to customize.
-    2. 
+    1. all **customization related data** is in `customization.service.ts`. And it is injected into components. 
+    So change everything inside this file, to customize.
 
 ## How to Run
 
@@ -207,6 +216,7 @@ Once you forked, do your customizations and _always get changes_ from [upstream]
 1. Install firebase cli w/ `npm install -g firebase-tools` then `firebase init` to auth. firebase user.
 2. Install gcloud on your local or use gshell on gcp, then initialize.
 3. `gcloud auth login` to authorize your accounts for gcp cloud. (i.e.  to use firebase export ops. on your local)
+4. `npm install -g cli-real-favicon` to generate all favicons for ms, ios, android. You just need 1 high resolution transparent .png file
 
 ##### License
 

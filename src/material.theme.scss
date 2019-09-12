@@ -3,36 +3,37 @@
 @include mat-core();
 
 // Define your application's custom palette.
+// http://mcg.mbitson.com/#!?mcgpalette0=%23fec701&themename=mcgtheme
 $primary: (
-  50 : #e2f1ff,
-  100 : #b6dbff,
-  200 : #86c4ff,
-  300 : #309aff,
-  400 : #309aff,
-  500 : #0c88ff,
-  600 : #0a80ff,
-  700 : #0875ff,
-  800 : #066bff,
-  900 : #0358ff,
-  A100 : #ffffff,
-  A200 : #f2f6ff,
-  A400 : #bfd1ff,
-  A700 : #a6bfff,
+  50 : #f1e5f5,
+  100 : #ddbde6,
+  200 : #c792d5,
+  300 : #b066c4,
+  400 : #9f45b7,
+  500 : #8e24aa,
+  600 : #8620a3,
+  700 : #7b1b99,
+  800 : #711690,
+  900 : #5f0d7f,
+  A100 : #e6b1ff,
+  A200 : #d67eff,
+  A400 : #c64bff,
+  A700 : #be31ff,
   contrast: (
-    50 : #000000,
-    100 : #000000,
-    200 : #000000,
-    300 : #000000,
-    400 : #000000,
-    500 : #ffffff,
-    600 : #ffffff,
-    700 : #ffffff,
-    800 : #ffffff,
-    900 : #ffffff,
-    A100 : #000000,
-    A200 : #000000,
-    A400 : #000000,
-    A700 : #000000,
+      50 : #000000,
+      100 : #000000,
+      200 : #000000,
+      300 : #000000,
+      400 : #ffffff,
+      500 : #ffffff,
+      600 : #ffffff,
+      700 : #ffffff,
+      800 : #ffffff,
+      900 : #ffffff,
+      A100 : #000000,
+      A200 : #000000,
+      A400 : #000000,
+      A700 : #ffffff,
   )
 );
 
@@ -68,6 +69,22 @@ $accent: (
     A700 : #000000,
   )
 );
+
+$mdc-theme-alternate-50 : #ffe9e6;
+$mdc-theme-alternate-100 : #fec8c0;
+$mdc-theme-alternate-200 : #fea497;
+$mdc-theme-alternate-300 : #fe806d;
+$mdc-theme-alternate-400 : #fd644d;
+$mdc-theme-alternate-500 : #fd492e;
+$mdc-theme-alternate-600 : #fd4229;
+$mdc-theme-alternate-700 : #fc3923;
+$mdc-theme-alternate-800 : #fc311d;
+$mdc-theme-alternate-900 : #fc2112;
+$mdc-theme-alternate-A100 : #ffffff;
+$mdc-theme-alternate-A200 : #fff6f6;
+$mdc-theme-alternate-A400 : #ffc6c3;
+$mdc-theme-alternate-A700 : #ffada9;
+
 
 // Define your application's custom theme.
 $material-app-primary: mat-palette($primary, 600, 400, 800);

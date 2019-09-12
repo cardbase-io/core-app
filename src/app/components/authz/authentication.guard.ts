@@ -24,6 +24,7 @@ export class AuthenticationGuard implements CanActivate {
       take(1),
       map(user => !!user),
       tap(loggedIn => {
+        // TODO: track this in GA w/ valid UTM
         !loggedIn ? this.router.navigate(['/']) : console.log('authorized');
       })
     );

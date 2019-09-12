@@ -17,9 +17,11 @@ import { User } from './user.model';
 export class AuthenticationService {
 
   // User's user document in firestore! And that will be shared across the app.
-  user$: Observable<any>;
+  user$: Observable<User>;
 
-  constructor(private afAuth: AngularFireAuth, private afs: AngularFirestore, private router: Router) {
+  constructor(private afAuth: AngularFireAuth, 
+              private afs: AngularFirestore, 
+              private router: Router) {
 
 
     // user-in-firebase-Authentication w/ user-in-firestore record
@@ -44,7 +46,7 @@ export class AuthenticationService {
 
     // const credential = await this.afAuth.auth.signInWithPopup(provider);
     await this.afAuth.auth.signInWithPopup(provider).then(result => {
-      console.log(result.user.toJSON());
+      console.log('User from FireAuth', result.user.toJSON());
 
       this.updateUserData(result.user);
 
@@ -119,12 +121,14 @@ export class AuthenticationService {
    * @param: String phoneNumber
    * @param: String email
    */
-  private updateUserData({ uid, displayName, phoneNumber, email }: User) {
+  private updateUserData({ uid, displayName, phoneNumber, email, photoURL, emailVerified, isAnonymous }: User) {
     const userRef: AngularFirestoreDocument<User> = this.afs.doc(`users/${uid}`);
+
+    this.user$.subscribe(user => console.log(user));
 
     // TODO: user.model should be updated
     //  diff between google's data model and user.model regarding to custom fields
-    const data = { uid, displayName, phoneNumber, email };
+    const data = { uid, displayName, phoneNumber, email, photoURL, emailVerified, isAnonymous };
 
     // creates or updates if available w/ merge:true
     return userRef.set(data, {merge: true});
