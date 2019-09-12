@@ -1,7 +1,7 @@
 export const environment = {
   production: false,
   www: {
-    wwwURL: 'https://demo.cardbase.io'
+    wwwURL: 'https://demon.cardbase.io'
   },
   firebase: {
 

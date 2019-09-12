@@ -18,6 +18,19 @@ enum ConsentType {
   // TODO: data processing related things
 }
 
+enum RoleType {
+  PLATFORM ,
+  STREAMING
+}
+
+enum Role {
+  VIEWER ,
+  OWNER,
+  ADMIN,
+  BROADCASTING,
+  TRANSLATING,
+}
+
 // {'Product Update', true, '', 'SMS'}
 class Consent {
   type: ConsentType;
@@ -32,15 +45,15 @@ export class User {
   uid: string;             // uuid
   displayName: string;
   email: string;
-  phoneNumber: string;     // from google or sign-in-w/phone
+  phoneNumber?: string;    // from google or sign-in-w/phone
   photoURL?: string;       // from google
   emailVerified?: boolean; // from google
   isAnonymous?: boolean;   // from google
-  lastLoginAt?: number;    // from google
 
   country?: string;
   created?: string;
 
   termsPrivacy?: string[]; // website subscription on 2017/03/01 expires 2018/03/01
   optIn?: Consent[];       // by channels
+  roles?: Map<RoleType, Role[]>;   // platform=[viewer], streaming=[broadcasting, translating]
 }

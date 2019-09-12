@@ -4,9 +4,12 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class CustomizationService {
-  productName = 'cardbaseio';
+  productName = 'cardbase';
   masterTitle = 'Master';
   detailTitle = 'Detail';
+
+  //on detailPage, round circle name
+  defaultFiltering = ['lorem', 'ipsum'];
 
   constructor() {}
 }

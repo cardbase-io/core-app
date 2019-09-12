@@ -1,5 +1,11 @@
 <mat-toolbar
-  style="margin: 8px 15px 10px 15px; width: auto; border-radius: 0.5em; background: #309aff; color: rgba(00,00,00,0.55)"
+  style="margin: 8px 15px 12px 15px;
+         min-height: 45px; max-height: 30px;
+         width: auto;
+         border-radius: 0.5em;
+         background: white;
+         color: rgba(255,255,255,0.85)"
+
   class="mat-elevation-z2"
   color="primary" #matToolbar>
   <mat-toolbar-row>
@@ -10,12 +16,22 @@
       </mat-icon>
     </button>
     <span class="top-menu-spacer"></span>
-    <span>Subtitle</span>
+    <span>{{ this.idea.detailTitle }}</span>
   </mat-toolbar-row>
 </mat-toolbar>
 
+<div class="filterButtons">
+  <div *ngFor="let value of this.idea.defaultFiltering">
+    <button mat-mini-fab class="mat-elevation-z0"
+            color="accent"
+            (click)="filter(value)">{{value}}
+    </button>
+  </div>
+</div>
+
 <mat-card matRipple
-          class="card mat-elevation-z1"
+          class="card mat-elevation-z0"
+          style="padding: 12px"
           *ngFor="let item of detailCards | async">
 
   <mat-card-content
@@ -26,11 +42,11 @@
       {{ item.cardContent.title }}
     </mat-card-title>
 
-    <mat-card-subtitle class="mat-card-subtitle">
+    <mat-card-subtitle class="mat-card-subtitle tuneIconSubtitle">
       <mat-icon class="mat-card-flat" *ngIf="item.cardContent.icon != ''">
         {{ item.cardContent.icon }}
       </mat-icon>
-      {{ item.cardContent.tags }}
+      {{ item.cardContent.tags.join(' • ') }}
     </mat-card-subtitle>
   </mat-card-content>
 
