@@ -1,7 +1,8 @@
 export const environment = {
   production: false,
-  www: {
-    wwwURL: 'https://demon.cardbase.io'
+  link: {
+    wwwURL: 'https://demon.cardbase.io',
+    // listeningURL: ''   external-app links
   },
   firebase: {
 

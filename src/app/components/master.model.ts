@@ -21,8 +21,8 @@ export class Master {
   };
 
   filters: {
-    default?: Location; 
+    default?: Location;
     locationName?: string;      // subTitle
-  }
+  };
 
 }

@@ -1,7 +1,8 @@
 export const environment = {
   production: true,
-  www: {
-    wwwURL: 'https://www.cardbase.io'
+  link: {
+    wwwURL: 'https://www.cardbase.io',
+    // listeningURL: ''   external-app links
   },
   firebase: {
     apiKey: 'AIzaSyBoQsaj-zrDfLy5fmNJ3l54ioDuGzZ5WVo',

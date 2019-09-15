@@ -5,7 +5,6 @@
          border-radius: 0.5em;
          background: white;
          color: rgba(255,255,255,0.85)"
-
   class="mat-elevation-z2"
   color="primary" #matToolbar>
   <mat-toolbar-row>
@@ -36,7 +35,7 @@
 
   <mat-card-content
     class="tuneRippleEffect"
-    routerLink="{{ item.cardContent.externalRouterLink }}" routerLinkActive="active">
+    (click)="routeToExternalApp(item.documentId)">
 
     <mat-card-title class="mat-card-content">
       {{ item.cardContent.title }}
