@@ -1,20 +1,27 @@
 .tuneIconSubtitle {
-    display: flex;
-    align-items: center
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 0;
 }
-  
-.card { margin: 0 0 -8px 0}
-  
+
+.card { margin: 0 0 -3px 0}
+
 .filterButtons {
-    margin: 0px 0 20px 10px;
-  
-    display: flex;
-    button {
-      margin-right: 10px;
-      width: 52px;
-      height: 52px;
-    }
-  
-    .md-18 { font-size: 24px; }
+  margin: 0px 0 20px 10px;
+
+  display: flex;
+  button {
+    margin-right: 10px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .md-18 { font-size: 24px; }
 }
-  
+
+.alternateAction,
+.secondaryAction {
+  margin-left: 8px;
+  margin-bottom: 0px;
+}

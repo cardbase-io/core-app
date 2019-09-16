@@ -28,14 +28,13 @@
   </div>
 </div>
 
-<mat-card matRipple
-          class="card mat-elevation-z0"
+<mat-card class="card mat-elevation-z0"
           style="padding: 12px"
           *ngFor="let item of detailCards | async">
 
-  <mat-card-content
+  <mat-card-content matRipple
     class="tuneRippleEffect"
-    (click)="routeToExternalApp(item.documentId)">
+    (click)="routeToPrimary(item.documentId)">
 
     <mat-card-title class="mat-card-content">
       {{ item.cardContent.title }}
@@ -49,6 +48,21 @@
     </mat-card-subtitle>
   </mat-card-content>
 
+  <mat-card-actions>
+    <button mat-stroked-button matRipple matRippleColor="#fd492e"
+            class="secondaryAction"
+            aria-label="Secondary button"
+            (click)="routeToSecondary(item.documentId)">
+      Secondary
+    </button>
+
+    <button mat-stroked-button matRipple matRippleColor="#0c88ff"
+            class="alternateAction"
+            aria-label="Alternate button"
+            (click)="routeToAlternate(item.documentId)">
+      Alternate
+    </button>
+  </mat-card-actions>
 </mat-card>
 
 <!--blank for the last item for mobile screens-->

@@ -82,15 +82,43 @@ export class DetailComponent implements OnInit {
     // this.detailCards.subscribe(detailCards => detailCards.forEach(detailCard => console.log(detailCard.documentId, detailCard.cardContent)));
   }
 
-  // change w/ a valid function name!!
-  routeToExternalApp(detailDocumentId: string) {
 
-    // const navigateURL = `${environment.link.listeningURL}/listening/${this.parentDocumentId}/${detailDocumentId}/${this.currentUserId}`;
-    // console.log('nav url', navigateURL);
+  routeToPrimary(detailDocumentId: string) {
+
+    // const navigateURL = `${environment.link.primary}/listening/${this.parentDocumentId}/${detailDocumentId}/${this.currentUserId}`;
 
     // document.location.href = navigateURL;
     // window.open(navigateURL, 'listening-app');
 
+    // tslint:disable-next-line:max-line-length
+    // this.router.navigateByUrl(navigateURL).then(e => e ? console.log('navigation to listening-app ok') :
+    //                                                      console.log('navigation to listening-app nok'));
+  }
+
+  routeToAlternate(detailDocumentId: string) {
+
+    // tslint:disable-next-line:max-line-length
+    // const navigateURL = `${environment.link.alternate}/translating/${this.parentDocumentId}/${detailDocumentId}/${this.currentUserId}`;
+
+    // document.location.href = navigateURL;
+    // window.open(navigateURL, 'translating-app');
+
+    // tslint:disable-next-line:max-line-length
+    // this.router.navigateByUrl(navigateURL).then(e => e ? console.log('navigation to listening-app ok') :
+    //                                                      console.log('navigation to listening-app nok'));
+  }
+
+  routeToSecondary(detailDocumentId: string) {
+
+    // tslint:disable-next-line:max-line-length
+    // const navigateURL = `${environment.link.secondary}/broadcasting/${this.parentDocumentId}/${detailDocumentId}/${this.currentUserId}`;
+
+    // document.location.href = navigateURL;
+    // window.open(navigateURL, 'broadcasting-app');
+
+    // tslint:disable-next-line:max-line-length
+    // this.router.navigateByUrl(navigateURL).then(e => e ? console.log('navigation to listening-app ok') :
+    //
   }
 
 }
