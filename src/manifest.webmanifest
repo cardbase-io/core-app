@@ -1,8 +1,8 @@
 {
-  "name": "cardbase",
+  "name": "cardbase.io",
   "short_name": "cardbase",
   "theme_color": "#fff",
-  "background_color": "#fafafa",
+  "background_color": "#fff",
   "display": "standalone",
   "scope": "/",
   "start_url": "/?utm_source=addToHomeScreen",

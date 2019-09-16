@@ -4,6 +4,10 @@ import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 import { AngularFirestore, AngularFirestoreCollection, CollectionReference } from '@angular/fire/firestore';
 import { CustomizationService } from '../../customization.service';
+import { environment } from '../../../environments/environment';
+import { Router } from '@angular/router';
+import { AuthenticationService } from '../authz/authentication.service';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-detail',
@@ -16,15 +20,19 @@ export class DetailComponent implements OnInit {
   detailCards: Observable<Detail[]>;
 
   parentDocumentId: string;
+  currentUserId: string;
 
   constructor(public idea: CustomizationService,
               private route: ActivatedRoute,
-              private db: AngularFirestore) {
+              private db: AngularFirestore,
+              private router: Router,
+              private auth: AuthenticationService) {
+
+    this.auth.user$.subscribe(user => this.currentUserId = user.uid);
 
     // get parentId param from url
     this.route.params.subscribe(res => {
       console.log(res);
-      console.log(`parentDocumentId: ${res.documentId}`);
 
       this.parentDocumentId = res.documentId;
     });
@@ -32,14 +40,22 @@ export class DetailComponent implements OnInit {
 
     this.detailCardsCollection = this.db.collection(`masterCards/${this.parentDocumentId}/detailCards`,
                                                   (ref) => ref.orderBy('defaultOrder', 'asc'));
-    this.detailCards = this.detailCardsCollection.valueChanges();
+
+    // we need meta data
+    this.detailCards = this.detailCardsCollection.snapshotChanges().pipe(map(actions => {
+      return actions.map(a => {
+        const data = a.payload.doc.data() as Detail;
+        data.documentId = a.payload.doc.id;
+        return data;
+      });
+    }));
 
     // logging
-    // this.detailCards.subscribe(detailCards => detailCards.forEach(detailCard => console.log(detailCard.filters)));
+    // tslint:disable-next-line:max-line-length
+    // this.detailCards.subscribe(detailCards => detailCards.forEach(detailCard => console.log(detailCard.documentId, detailCard.cardContent)));
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
   /**
    * Default filtering capability w/ asc ordering
@@ -50,12 +66,59 @@ export class DetailComponent implements OnInit {
 
     this.detailCardsCollection = this.db.collection(`masterCards/${this.parentDocumentId}/detailCards`,
                                                  (ref) => ref.where('filters.default', '==', value)
-                                                             .orderBy('defaultOrder', 'asc'));
-    this.detailCards = this.detailCardsCollection.valueChanges();
+                                                                     .orderBy('defaultOrder', 'asc'));
+
+    // we need meta data
+    this.detailCards = this.detailCardsCollection.snapshotChanges().pipe(map(actions => {
+      return actions.map(a => {
+        const data = a.payload.doc.data() as Detail;
+        data.documentId = a.payload.doc.id;
+        return data;
+      });
+    }));
 
     // logging
-    // this.detailCards.subscribe(detailCards => detailCards.forEach(detailCard => console.log(detailCard.defaultFilters)));
+    // tslint:disable-next-line:max-line-length
+    // this.detailCards.subscribe(detailCards => detailCards.forEach(detailCard => console.log(detailCard.documentId, detailCard.cardContent)));
+  }
 
+
+  routeToPrimary(detailDocumentId: string) {
+
+    // const navigateURL = `${environment.link.primary}/listening/${this.parentDocumentId}/${detailDocumentId}/${this.currentUserId}`;
+
+    // document.location.href = navigateURL;
+    // window.open(navigateURL, 'listening-app');
+
+    // tslint:disable-next-line:max-line-length
+    // this.router.navigateByUrl(navigateURL).then(e => e ? console.log('navigation to listening-app ok') :
+    //                                                      console.log('navigation to listening-app nok'));
+  }
+
+  routeToAlternate(detailDocumentId: string) {
+
+    // tslint:disable-next-line:max-line-length
+    // const navigateURL = `${environment.link.alternate}/translating/${this.parentDocumentId}/${detailDocumentId}/${this.currentUserId}`;
+
+    // document.location.href = navigateURL;
+    // window.open(navigateURL, 'translating-app');
+
+    // tslint:disable-next-line:max-line-length
+    // this.router.navigateByUrl(navigateURL).then(e => e ? console.log('navigation to listening-app ok') :
+    //                                                      console.log('navigation to listening-app nok'));
+  }
+
+  routeToSecondary(detailDocumentId: string) {
+
+    // tslint:disable-next-line:max-line-length
+    // const navigateURL = `${environment.link.secondary}/broadcasting/${this.parentDocumentId}/${detailDocumentId}/${this.currentUserId}`;
+
+    // document.location.href = navigateURL;
+    // window.open(navigateURL, 'broadcasting-app');
+
+    // tslint:disable-next-line:max-line-length
+    // this.router.navigateByUrl(navigateURL).then(e => e ? console.log('navigation to listening-app ok') :
+    //
   }
 
 }

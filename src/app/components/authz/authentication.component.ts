@@ -12,7 +12,7 @@ import { environment } from '../../../environments/environment';
 })
 export class AuthenticationComponent implements OnInit {
 
-  environment = environment.www;
+  link = environment.link;
 
   constructor(public idea: CustomizationService,
               private bottomSheetRef: MatBottomSheetRef<MasterComponent>,

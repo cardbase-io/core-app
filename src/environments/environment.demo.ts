@@ -1,7 +1,10 @@
 export const environment = {
   production: false,
-  www: {
-    wwwURL: 'https://demon.cardbase.io'
+  link: {
+    www: 'https://demon.cardbase.io',
+    // primary: '',      default - external-app links
+    // secondary: '',    external-app links
+    // alternate: ''     external-app links
   },
   firebase: {
 

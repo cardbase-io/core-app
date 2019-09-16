@@ -16,7 +16,6 @@ import { PageNotFoundComponent } from './components/404/page-not-found.component
 
 import { FirebaseModule } from './firebase.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
 
 
 @NgModule({

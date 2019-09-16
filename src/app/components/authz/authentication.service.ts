@@ -19,8 +19,8 @@ export class AuthenticationService {
   // User's user document in firestore! And that will be shared across the app.
   user$: Observable<User>;
 
-  constructor(private afAuth: AngularFireAuth, 
-              private afs: AngularFirestore, 
+  constructor(private afAuth: AngularFireAuth,
+              private afs: AngularFirestore,
               private router: Router) {
 
 
@@ -120,14 +120,15 @@ export class AuthenticationService {
    * @param: String displayName
    * @param: String phoneNumber
    * @param: String email
+   * @param: String photoURL
+   * @param: boolean emailVerified
+   * @param: boolean isAnonymous
    */
   private updateUserData({ uid, displayName, phoneNumber, email, photoURL, emailVerified, isAnonymous }: User) {
     const userRef: AngularFirestoreDocument<User> = this.afs.doc(`users/${uid}`);
 
     this.user$.subscribe(user => console.log(user));
 
-    // TODO: user.model should be updated
-    //  diff between google's data model and user.model regarding to custom fields
     const data = { uid, displayName, phoneNumber, email, photoURL, emailVerified, isAnonymous };
 
     // creates or updates if available w/ merge:true
